@@ -1,0 +1,16 @@
+[
+    {
+        "modid": "lilrichymod",
+        "name": "LiLRichy Mod",
+        "description": "A few random items made by LiLRichy for his ModPacks.",
+        "version": "${version}",
+        "mcversion": "1.8.9",
+        "url": "",
+        "updateUrl": "",
+        "authorList": ["LiLRichy"],
+        "credits": "",
+        "logoFile": "",
+        "screenshots": [],
+        "dependencies": []
+    }
+]

@@ -1,0 +1,78 @@
+LiLRichy Mod Change Log
+Version = V Forge Change . Mod change + incremental NEVER Reset
+Update version in this file, build.gradle, gradle.properties, Reference
+
+v1.13
+Fixed Typo on Stone Minerals blocks
+Added checks for recipes to not load if required mod is not present.
+Added Lectern Block.
+Added Glass Panes.
+Added Clear Brown Glass.
+Added Stairs for Decorative Blocks.
+
+v1.12
+Added Thermal Expansion Pulverizer recipe for crushed concrete from concrete blocks.
+Fixed null showing in tooltip on blocks with out crafting tips.
+Added Ender IO sag mill recipe for crushed concrete from concrete blocks.
+Added Config options to enable and disable recipes for many things.
+Removed old Decorative block recipes - use block table for all blocks now.
+Added Pulverized coal and charcoal usable as black dye.
+Fixed Drop Rate on Bearded Azalea plant.
+Fixed Plant not recognized as a plant - works with Ender IO farming station now.
+Added crafting recipe to turn Essence of Bearded back into seeds.
+Death sock no longer crashes a server.
+Added 6 new Glass Blocks.
+Added 4 new Stone Blocks.
+Added Ore Dictionary Entries for Decorative Blocks.
+Rewrote the Block Table Recipes to Use Ore Dictionary.
+Cottage Recipes Now Use any Wood Planks instead of just Oak.
+Code clean up - Reorganized Folders and made Block table Recipe code a bit neater.
+
+v1.11
+Added option to reset config file and renamed a bit to make it clearer - should be done to clean up config file
+Fixed Server disconnect bug when using Player detector or Advanced player detector
+Added Arranged Stone and Cracked Stone to Recipes for Block table
+Added Tool Tips to blocks to show what materials are needed to craft them.
+Added 8 new Blocks.
+
+v1.10
+Added Lava Blocks to the Block table - crafted with concrete and nether rack
+
+v1.9
+Renamed files to fix textures not showing on cottage blocks.
+
+v1.8
+Fix server crash due to client side event handler being called.
+
+v1.7
+Block Table now uses both slots for crafting costs.
+
+v1.6
+Fixed block table not taking both stacks of materials.
+
+v1.5
+Added Block Table
+Removed recipes for decorative blocks."can be turned back on in config" = Now use Block Table for all Decorative blocks.
+Fixed Concrete dropping items again....
+Code Clean up.
+
+v1.4
+Added Crafting recipes for new blocks added in 1.3
+
+v1.3
+Added a LOT More Blocks
+Added Bearded Azalea Crop, seeds, and Essence
+Added ToolTips to Decorative Blocks
+Code clean up
+Death sock is a lil friendlier
+
+v1.2
+Fixed render of panels to be 2 pixels wide
+Fixed Hardness of Panels
+Added Smelting recipe for concrete
+
+v1.1
+Added Wood Panels and Planks Panels
+
+v1.0
+Initial Release
