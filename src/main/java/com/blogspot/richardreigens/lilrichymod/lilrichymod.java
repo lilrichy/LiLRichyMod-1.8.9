@@ -4,12 +4,8 @@ import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.GuiHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.PacketDescriptionHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.network.NetworkHandler;
-import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
-import com.blogspot.richardreigens.lilrichymod.init.ModBlocksGlass;
-import com.blogspot.richardreigens.lilrichymod.init.ModItems;
-import com.blogspot.richardreigens.lilrichymod.init.ModTileEntity;
+import com.blogspot.richardreigens.lilrichymod.init.DecorativeBlockInit;
 import com.blogspot.richardreigens.lilrichymod.proxy.CommonProxy;
-import com.blogspot.richardreigens.lilrichymod.recipes.Recipes;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
 import net.minecraftforge.fml.common.FMLCommonHandler;
@@ -39,14 +35,18 @@ public class lilrichymod {
 
         LogHelper.info("LILRICHY MOD IS BOOTING UP!!!!!!!!!");
 
-        ModItems.init();
+        //  ModItems.init();
         LogHelper.info("Items Loading");
 
-        ModBlocks.init();
-        ModBlocksGlass.init();
+        // ModBlocks.init();
+        // ModBlocksGlass.init();
+
+        DecorativeBlockInit.init();
+        DecorativeBlockInit.register();
+        proxy.registerRenderers();
         LogHelper.info("Blocks Loading");
 
-        ModTileEntity.Init();
+        //  ModTileEntity.Init();
         LogHelper.info("Tile Entity's Loading");
 
         PacketDescriptionHandler.init();
@@ -60,13 +60,14 @@ public class lilrichymod {
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
         LogHelper.info("GUI Handler Loading");
 
-        proxy.registerRenderers();
+
         LogHelper.info("Pre Initialization Complete");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        Recipes.init();
+       // proxy.registerRenderers();
+       // Recipes.init();
         LogHelper.info("Recipes Loading");
         LogHelper.info("Initialization Complete");
     }

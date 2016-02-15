@@ -116,7 +116,7 @@ public class ContainerBlockTable extends ContainerLiLRichyMod {
         return itemstack;
     }
 
-    // SlotInput is a slot for Concrete items
+    // SlotInput is a slot for Concrete item
     public class SlotInputConcrete extends Slot {
         public SlotInputConcrete(IInventory inventoryIn, int index, int xPosition, int yPosition) {
             super(inventoryIn, index, xPosition, yPosition);
@@ -129,7 +129,7 @@ public class ContainerBlockTable extends ContainerLiLRichyMod {
         }
     }
 
-    // SlotInput is a single stack slot for Modifier items
+    // SlotInput is a single stack slot for Modifier item
     public class SlotInputModifier extends Slot {
         public SlotInputModifier(IInventory inventoryIn, int index, int xPosition, int yPosition) {
             super(inventoryIn, index, xPosition, yPosition);
@@ -142,7 +142,7 @@ public class ContainerBlockTable extends ContainerLiLRichyMod {
         }
     }
 
-    // SlotOutput is a slot that will not accept any items
+    // SlotOutput is a slot that will not accept any item
     public class SlotOutput extends Slot {
         public SlotOutput(IInventory inventoryIn, int index, int xPosition, int yPosition) {
             super(inventoryIn, index, xPosition, yPosition);

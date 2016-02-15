@@ -28,7 +28,7 @@ public class ItemDeathSock extends ItemLiLRichyMod {
         this.setUnlocalizedName(Names.Items.DEATH_SOCK);
         this.maxStackSize = 1;
     }
-    //ToDo Rendering of blocks, items, block states, and models
+    //ToDo Rendering of blocks, item, block states, and models
     @SideOnly(Side.CLIENT)
     public boolean hasEffect(ItemStack par1ItemStack, int pass) {
         return charged;

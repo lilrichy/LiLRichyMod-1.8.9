@@ -17,7 +17,7 @@ public class LiLRichyStairs extends BlockStairs {
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
         this.setUnlocalizedName(name);
     }
-    //ToDo Rendering of blocks, items, block states, and models
+    //ToDo Rendering of blocks, item, block states, and models
     @Override
     public String getUnlocalizedName() {
         return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", "decorativeBlocks/" + getUnwrappedUnlocalizedName(super.getUnlocalizedName()));

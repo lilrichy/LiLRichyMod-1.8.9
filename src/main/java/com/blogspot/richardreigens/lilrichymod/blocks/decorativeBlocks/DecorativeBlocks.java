@@ -1,7 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks;
 
 import com.blogspot.richardreigens.lilrichymod.creativeTab.CreativeTabLiLRichyMod;
-import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -11,7 +10,8 @@ import net.minecraft.block.material.Material;
 public class DecorativeBlocks extends Block {
     private final String blockToolTip;
     private final String blockCraftTip;
-//Todo All Blocks need textures, blockstates, models, and item textures
+
+    //Todo All Blocks need textures, blockstates, models, and item textures
     //Constructor with Tool tip and Crafting tip string
     public DecorativeBlocks(String name, Material material, String toolTip, String craftTip) {
         super(material);
@@ -58,21 +58,4 @@ public class DecorativeBlocks extends Block {
             return n.blockCraftTip;
         } else return null;
     }
-
-    @Override
-    public String getUnlocalizedName() {
-        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", "decorativeBlocks/" + getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
-    }
-
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
-    }
-
-   /* @Override
-    @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister iconRegister) {
-        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
-    }
-*/
-
 }

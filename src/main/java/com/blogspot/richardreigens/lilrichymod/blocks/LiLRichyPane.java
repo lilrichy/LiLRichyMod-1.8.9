@@ -16,7 +16,7 @@ public class LiLRichyPane extends BlockPane {
 
     @SideOnly(Side.CLIENT)
    // private IIcon blockIconTop;
-//ToDo Rendering of blocks, items, block states, and models
+//ToDo Rendering of blocks, item, block states, and models
     public LiLRichyPane(String Name, String sideBlockName, String topName, Material material, boolean canDrop) {
         super(/*sideBlockName, topName,*/ material, canDrop);
         this.sideIcon = sideBlockName;

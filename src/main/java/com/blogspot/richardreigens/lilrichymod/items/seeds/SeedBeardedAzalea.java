@@ -16,7 +16,7 @@ public class SeedBeardedAzalea extends ItemSeeds {
         setUnlocalizedName(name);
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
     }
-    //ToDo Rendering of blocks, items, block states, and models
+    //ToDo Rendering of blocks, item, block states, and models
     @Override
     public String getUnlocalizedName() {
         return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":seeds/", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));

@@ -1,0 +1,21 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "minecraft:cube_all",
+        "transform": "forge:default-block"
+    },
+    "variants": {
+        "type": {
+            "decovar0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/arrangedConcreteBricks" } },
+            "decovar1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteBricks" } },
+            "decovar2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteBricksDark" } },
+            "decovar3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteRocks" } },
+            "decovar4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteSquares" } },
+            "decovar5": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteTexturedBlocks" } },
+            "decovar6": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/fancyConcreteBlocks" } },
+            "decovar7": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/oldConcreteSquares" } },
+            "decovar8": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/smallConcreteBricks" } },
+            "decovar9": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/smallConcreteTexturedSquares" } }
+        }
+    }
+}

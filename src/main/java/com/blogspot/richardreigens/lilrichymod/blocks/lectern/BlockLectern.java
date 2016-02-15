@@ -21,7 +21,7 @@ import net.minecraft.world.World;
  * Created by LiLRichy on 1/26/2016.
  */
 public class BlockLectern extends BlockContainer {
-//Todo Item Model, Book Renderer, On right click not working
+//Todo Item Model, Book Renderer, On right click not working rotation not working also
     public BlockLectern() {
         super(Material.wood);
         setHardness(2.0f);

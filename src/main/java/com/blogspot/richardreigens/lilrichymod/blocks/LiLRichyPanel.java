@@ -12,7 +12,7 @@ public class LiLRichyPanel extends BlockPane {
    // private IIcon blockIconTop;
     private String sideIcon;
     private String topIcon;
-    //ToDo Rendering of blocks, items, block states, and models
+    //ToDo Rendering of blocks, item, block states, and models
     public LiLRichyPanel(String Name, String sideBlockName, String topName, Material material, boolean canDrop) {
         super(/*sideBlockName, topName,*/ material, canDrop);
         this.sideIcon = sideBlockName;

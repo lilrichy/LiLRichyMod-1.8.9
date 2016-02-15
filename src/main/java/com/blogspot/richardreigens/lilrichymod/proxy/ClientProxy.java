@@ -5,6 +5,7 @@ import com.blogspot.richardreigens.lilrichymod.blocks.blockTable.TileEntityBlock
 import com.blogspot.richardreigens.lilrichymod.blocks.lectern.LecternRender;
 import com.blogspot.richardreigens.lilrichymod.blocks.lectern.TileEntityLectern;
 import com.blogspot.richardreigens.lilrichymod.handler.EventHandler;
+import com.blogspot.richardreigens.lilrichymod.init.DecorativeBlockInit;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.entity.player.EntityPlayer;
@@ -20,6 +21,10 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class ClientProxy extends CommonProxy {
     @Override
     public void registerRenderers() {
+
+        //Block Item Renderer
+        DecorativeBlockInit.registerRenders();
+
         TileEntitySpecialRenderer render = new RenderBlockTable();
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockTable.class, render);
        // MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModTileEntity.blockTable), new ItemRenderBlockTable(render, new TileEntityBlockTable()));
