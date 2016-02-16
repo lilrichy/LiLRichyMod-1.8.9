@@ -36,7 +36,7 @@ public class BlockTableRecipes {
         for (ItemStack aMetal : OreDictionary.getOres(Names.OreDicNames.METAL))
             this.addRecipe(new ItemStack(DecoBlocks.deco_metal), new ItemStack(aMetal.getItem()), new ItemStack(Items.iron_ingot));
 
-        this.addRecipe(new ItemStack(DecoBlocks.deco_metalRobotColors), new ItemStack(DecoBlocks.deco_lava.getStateFromMeta(1).getBlock()), new ItemStack(ModItems.essanceOfBeared));
+        this.addRecipe(new ItemStack(DecoBlocks.deco_metalRobotColors), new ItemStack(DecoBlocks.deco_metal.getStateFromMeta(1).getBlock()), new ItemStack(ModItems.essanceOfBeared));
         for (ItemStack aMetalRobot : OreDictionary.getOres(Names.OreDicNames.METAL_ROBOT))
             this.addRecipe(new ItemStack(DecoBlocks.deco_metalRobotColors), new ItemStack(aMetalRobot.getItem()), new ItemStack(ModItems.essanceOfBeared));
 
@@ -126,8 +126,7 @@ public class BlockTableRecipes {
         //Lists of Materials that can be used in the 2nd Slot of the Block Table
         ItemStack[] materialList = {new ItemStack(ModItems.crushedConcrete), new ItemStack(Items.iron_ingot),
                 new ItemStack(Blocks.sandstone), new ItemStack(Blocks.netherrack),
-                new ItemStack(Blocks.stone)};
-        //Todo, new ItemStack(ModItems.essanceOfBeared)};
+                new ItemStack(Blocks.stone), new ItemStack(ModItems.essanceOfBeared)};
 
         for (ItemStack aMatsList : materialList) if (stack.isItemEqual(aMatsList)) return true;
 

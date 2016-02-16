@@ -35,7 +35,7 @@ public class DecoBlocks {
     public static Block deco_lava = new DecoSubBlocks("DecoLava", Material.rock,
             Reference.CRAFT_WITH + Reference.LAVA_BLOCKS, DecoBlockVarStrings.lavaTypes);
     public static Block deco_lavaBowlColors = new DecoSubBlocks("DecoLavaBowlColors", Material.rock,
-            Reference.CRAFT_WITH + Reference.LAVA_BLOCKS, DecoBlockVarStrings.lavaBowlTypes);
+           Reference.LAVA_BOWL_COLORS, DecoBlockVarStrings.lavaBowlTypes);
 
     //Marble
     public static Block deco_marble = new DecoSubBlocks("DecoMarble", Material.rock,
@@ -45,13 +45,13 @@ public class DecoBlocks {
     public static Block deco_metal = new DecoSubBlocks("DecoMetal", Material.iron,
             Reference.CRAFT_WITH + Reference.METAL_BLOCKS, DecoBlockVarStrings.metalTypes);
     public static Block deco_metalRobotColors = new DecoSubBlocks("DecoMetalRobotColors", Material.iron,
-            Reference.CRAFT_WITH + Reference.METAL_BLOCKS, DecoBlockVarStrings.metalRobotTypes);
+            Reference.METAL_ROBOT_COLORS, DecoBlockVarStrings.metalRobotTypes);
 
     //Stone
     public static Block deco_stone = new DecoSubBlocks("DecoStone", Material.rock,
             Reference.CRAFT_WITH + Reference.STONE_BLOCKS, DecoBlockVarStrings.stoneTypes);
     public static Block deco_stoneMineralsColors = new DecoSubBlocks("DecoStoneMineralsColors", Material.rock,
-            Reference.CRAFT_WITH + Reference.STONE_BLOCKS, DecoBlockVarStrings.stoneMineralsTypes);
+            Reference.STONE_MINERALS_COLORS_CRAFT, DecoBlockVarStrings.stoneMineralsTypes);
 
     /**
      * Initial Registry
