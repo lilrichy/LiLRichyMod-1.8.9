@@ -27,49 +27,60 @@ public class BlockTableRecipes {
          * Each Recipie Should have 2 parts the main recipe and the Ore Dictionary part.
          * Ore Dictionary Recipes - Allow blocks to convert between similar types.
          */
+        //Concrete
         this.addRecipe(new ItemStack(DecoBlocks.deco_concrete), new ItemStack(DecoBlocks.concrete_block), new ItemStack(ModItems.crushedConcrete));
         for (ItemStack aConcrete : OreDictionary.getOres(Names.OreDicNames.CONCRETE))
             this.addRecipe(new ItemStack(DecoBlocks.deco_concrete), new ItemStack(aConcrete.getItem()), new ItemStack(ModItems.crushedConcrete));
 
+        //Metal
         this.addRecipe(new ItemStack(DecoBlocks.deco_metal), new ItemStack(DecoBlocks.concrete_block), new ItemStack(Items.iron_ingot));
         for (ItemStack aMetal : OreDictionary.getOres(Names.OreDicNames.METAL))
             this.addRecipe(new ItemStack(DecoBlocks.deco_metal), new ItemStack(aMetal.getItem()), new ItemStack(Items.iron_ingot));
 
-      /**Need to update the Recipies for the following blocks when they are added back to mod*/
-        /*
-        this.addRecipe(marbleList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.sandstone));
-        this.addRecipe(lavaList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.netherrack));
-        this.addRecipe(stoneList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.stone));
-        this.addRecipe(lavaBowlListColor, new ItemStack(ModBlocks.lavaBowl), new ItemStack(ModItems.essanceOfBeared));
-        this.addRecipe(metalRobotListColor, new ItemStack(ModBlocks.metalBatteredRobot), new ItemStack(ModItems.essanceOfBeared));
-
-        for (ItemStack aPlanks : OreDictionary.getOres("plankWood"))
-            this.addRecipe(cottageList, new ItemStack(ModBlocks.concrete), new ItemStack(aPlanks.getItem()));
-
+        //Marble
+        this.addRecipe(new ItemStack(DecoBlocks.deco_marble), new ItemStack(DecoBlocks.concrete_block), new ItemStack(Blocks.sandstone));
         for (ItemStack aMarble : OreDictionary.getOres(Names.OreDicNames.MARBLE))
-            this.addRecipe(marbleList, new ItemStack(aMarble.getItem()), new ItemStack(Blocks.sandstone));
-        for (ItemStack aLava : OreDictionary.getOres(Names.OreDicNames.LAVA))
-            this.addRecipe(lavaList, new ItemStack(aLava.getItem()), new ItemStack(Blocks.netherrack));
-        for (ItemStack aStone : OreDictionary.getOres(Names.OreDicNames.STONE))
-            this.addRecipe(stoneList, new ItemStack(aStone.getItem()), new ItemStack(Blocks.stone));
-        for (ItemStack aLavaBowl : OreDictionary.getOres(Names.OreDicNames.LAVA_BOWL))
-            this.addRecipe(lavaBowlListColor, new ItemStack(aLavaBowl.getItem()), new ItemStack(ModItems.essanceOfBeared));
-        for (ItemStack aMetalRobot : OreDictionary.getOres(Names.OreDicNames.METAL_ROBOT))
-            this.addRecipe(metalRobotListColor, new ItemStack(aMetalRobot.getItem()), new ItemStack(ModItems.essanceOfBeared));
-        for (ItemStack aMinerals : OreDictionary.getOres(Names.OreDicNames.STONE_MINERALS))
-            this.addRecipe(stoneMineralsListColors, new ItemStack(aMinerals.getItem()), new ItemStack(ModItems.essanceOfBeared));
-        for (ItemStack aGlass : OreDictionary.getOres("blockGlass"))
-            this.addRecipe(glassList, new ItemStack(aGlass.getItem()), new ItemStack(ModItems.essanceOfBeared));
+            this.addRecipe(new ItemStack(DecoBlocks.deco_marble), new ItemStack(aMarble.getItem()), new ItemStack(Blocks.sandstone));
 
+        //Lava
+        this.addRecipe(new ItemStack(DecoBlocks.deco_lava), new ItemStack(DecoBlocks.concrete_block), new ItemStack(Blocks.netherrack));
+        for (ItemStack aLava : OreDictionary.getOres(Names.OreDicNames.LAVA))
+            this.addRecipe(new ItemStack(DecoBlocks.deco_lava), new ItemStack(aLava.getItem()), new ItemStack(Blocks.netherrack));
+
+        //Stone
+        this.addRecipe(new ItemStack(DecoBlocks.deco_stone), new ItemStack(DecoBlocks.concrete_block), new ItemStack(Blocks.stone));
+        for (ItemStack aStone : OreDictionary.getOres(Names.OreDicNames.STONE))
+            this.addRecipe(new ItemStack(DecoBlocks.deco_stone), new ItemStack(aStone.getItem()), new ItemStack(Blocks.stone));
+
+        //Cottage
+        for (ItemStack aPlanks : OreDictionary.getOres("plankWood"))
+            this.addRecipe(new ItemStack(DecoBlocks.deco_cottage), new ItemStack(DecoBlocks.concrete_block), new ItemStack(aPlanks.getItem()));
         for (ItemStack aCottage : OreDictionary.getOres(Names.OreDicNames.COTTAGE)) {
             for (ItemStack aPlanks : OreDictionary.getOres("plankWood"))
-                this.addRecipe(cottageList, new ItemStack(aCottage.getItem()), new ItemStack(aPlanks.getItem()));
-        }*/
+                this.addRecipe(new ItemStack(DecoBlocks.deco_cottage), new ItemStack(aCottage.getItem()), new ItemStack(aPlanks.getItem()));
+
+
+            //TODO Need to update the Recipies for the following blocks when they are added back to mod
+            /*
+                this.addRecipe(lavaBowlListColor, new ItemStack(ModBlocks.lavaBowl), new ItemStack(ModItems.essanceOfBeared));
+                this.addRecipe(metalRobotListColor, new ItemStack(ModBlocks.metalBatteredRobot), new ItemStack(ModItems.essanceOfBeared));
+
+                for (ItemStack aLavaBowl : OreDictionary.getOres(Names.OreDicNames.LAVA_BOWL))
+                    this.addRecipe(lavaBowlListColor, new ItemStack(aLavaBowl.getItem()), new ItemStack(ModItems.essanceOfBeared));
+                for (ItemStack aMetalRobot : OreDictionary.getOres(Names.OreDicNames.METAL_ROBOT))
+                    this.addRecipe(metalRobotListColor, new ItemStack(aMetalRobot.getItem()), new ItemStack(ModItems.essanceOfBeared));
+                for (ItemStack aMinerals : OreDictionary.getOres(Names.OreDicNames.STONE_MINERALS))
+                    this.addRecipe(stoneMineralsListColors, new ItemStack(aMinerals.getItem()), new ItemStack(ModItems.essanceOfBeared));
+                for (ItemStack aGlass : OreDictionary.getOres("blockGlass"))
+                    this.addRecipe(glassList, new ItemStack(aGlass.getItem()), new ItemStack(ModItems.essanceOfBeared));
+             */
+        }
     }
 
 
     /**
-     *  This is used to check if the block can be placed in the first slot.
+     * This is used to check if the block can be placed in the first slot.
+     *
      * @param stack the block trying to be placed into the slot
      * @return True if the block matches and can be placed in the slot
      */
@@ -105,6 +116,7 @@ public class BlockTableRecipes {
 
     /**
      * Checks if a block can be placed into the 2nd slot
+     *
      * @param stack the block trying to be placed into the slot
      * @return True if the block matches and can be placed in the slot
      */

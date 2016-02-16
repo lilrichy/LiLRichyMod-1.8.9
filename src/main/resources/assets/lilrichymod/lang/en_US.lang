@@ -14,16 +14,16 @@ tile.lilrichymod:lectern.name=Lectern
 
 #BLOCKS------------------------------------------------------------------------------------------------
 #COTTAGE
-tile.lilrichymod:decorativeBlocks/cottageWall.name=Cottage Wall
-tile.lilrichymod:decorativeBlocks/cottageWallArchedBeam.name=Cottage Wall with Arched Beam
-tile.lilrichymod:decorativeBlocks/cottageWallArchedBeamDark.name=Cottage Wall with Arched Beam Dark
-tile.lilrichymod:decorativeBlocks/cottageWallDark.name=Cottage Wall Dark
-tile.lilrichymod:decorativeBlocks/cottageWallPanelDark.name=Cottage Wall Panel Dark
-tile.lilrichymod:decorativeBlocks/cottageWallPanelLight.name=Cottage Wall Panel Light
-tile.lilrichymod:decorativeBlocks/cottageWallXDark.name=Cottage Crossed Wall Dark
-tile.lilrichymod:decorativeBlocks/cottageWallXLight.name=Cottage Crossed Wall Light
-tile.lilrichymod:decorativeBlocks/cottageWindowDark.name=Cottage Window Dark
-tile.lilrichymod:decorativeBlocks/cottageWindowLight.name=Cottage Window Light
+tile.DecoCottage.cottageWall.name=Cottage Wall
+tile.DecoCottage.cottageWallArchedBeam.name=Cottage Wall with Arched Beam
+tile.DecoCottage.DecoLava.cottageWallArchedBeamDark.name=Cottage Wall with Arched Beam Dark
+tile.DecoCottage.DecoLava.cottageWallDark.name=Cottage Wall Dark
+tile.DecoCottage.DecoLava.cottageWallPanelDark.name=Cottage Wall Panel Dark
+tile.DecoCottage.DecoLava.cottageWallPanelLight.name=Cottage Wall Panel Light
+tile.DecoCottage.DecoLava.cottageWallXDark.name=Cottage Crossed Wall Dark
+tile.DecoCottage.DecoLava.cottageWallXLight.name=Cottage Crossed Wall Light
+tile.DecoCottage.DecoLava.cottageWindowDark.name=Cottage Window Dark
+tile.DecoCottage.cottageWindowLight.name=Cottage Window Light
 
 #METAL
 tile.DecoMetal.metalArmor.name=Metal Armor
@@ -43,21 +43,21 @@ tile.DecoMetal.metalSeafoamTarnish.name=Metal Sea Foam Tarnish
 tile.DecoMetal.metalStained.name=Metal Stained
 
 #LAVA
-tile.lilrichymod:decorativeBlocks/lavaBowl.name=Lava Bowl
-tile.lilrichymod:decorativeBlocks/lavaBowlBlue.name=Lava Bowl Blue
-tile.lilrichymod:decorativeBlocks/lavaBowlGreen.name=Lava Bowl Green
-tile.lilrichymod:decorativeBlocks/lavaBowlPurple.name=Lava Bowl Purple
-tile.lilrichymod:decorativeBlocks/lavaCracks.name=Lava Cracks
-tile.lilrichymod:decorativeBlocks/lavaDeepFire.name=Lava Deep Fire
-tile.lilrichymod:decorativeBlocks/lavaPelesLake.name=Lava Pele's Lake
-tile.lilrichymod:decorativeBlocks/lavaSearingGorge.name=Lava Searing Gorge
-tile.lilrichymod:decorativeBlocks/lavaSlumberingVolcano.name=Lava Slumbering Volcano
+tile.DecoLava.lavaBowl.name=Lava Bowl
+tile.DecoLava.lavaBowlBlue.name=Lava Bowl Blue
+tile.DecoLava.lavaBowlGreen.name=Lava Bowl Green
+tile.DecoLava.lavaBowlPurple.name=Lava Bowl Purple
+tile.DecoLava.lavaCracks.name=Lava Cracks
+tile.DecoLava.lavaDeepFire.name=Lava Deep Fire
+tile.DecoLava.lavaPelesLake.name=Lava Pele's Lake
+tile.DecoLava.lavaSearingGorge.name=Lava Searing Gorge
+tile.DecoLava.lavaSlumberingVolcano.name=Lava Slumbering Volcano
 
 #MARBLE
-tile.lilrichymod:decorativeBlocks/marbleBlack.name=Black Marble
-tile.lilrichymod:decorativeBlocks/marbleBlancoAurora.name=Blanco Aurora Marble
-tile.lilrichymod:decorativeBlocks/marbleBlancoNafin.name=Blanco Nafin Marble
-tile.lilrichymod:decorativeBlocks/marbleSpottedBianco.name=Spotted Bianco Marble
+tile.DecoMarble.marbleBlack.name=Black Marble
+tile.DecoMarble.marbleBlancoAurora.name=Blanco Aurora Marble
+tile.DecoMarble.marbleBlancoNafin.name=Blanco Nafin Marble
+tile.DecoMarble.marbleSpottedBianco.name=Spotted Bianco Marble
 
 #CONCRETE
 tile.concrete.name=Concrete
@@ -72,17 +72,15 @@ tile.DecoConcrete.concreteSmallBricks.name=Small Concrete Bricks
 tile.DecoConcrete.concreteSmallTexturedSquares.name=Small Textured Concrete Squares
 tile.DecoConcrete.concreteTexturedBlocks.name=Textured Concrete Blocks
 
-
-
 #STONE
-tile.lilrichymod:decorativeBlocks/stoneCracked.name=Cracked Stone
-tile.lilrichymod:decorativeBlocks/stonearrangedBricks.name=Arranged Stone Bricks
-tile.lilrichymod:decorativeBlocks/stoneBlocks.name=Stone Blocks
-tile.lilrichymod:decorativeBlocks/stoneBlocksDark.name=Dark Stone Blocks
-tile.lilrichymod:decorativeBlocks/stoneMinerals.name=Stone Minerals
-tile.lilrichymod:decorativeBlocks/stoneMineralsBlue.name=Stone Minerals Blue
-tile.lilrichymod:decorativeBlocks/stoneMineralsOrange.name=Stone Minerals Orange
-tile.lilrichymod:decorativeBlocks/stoneMineralsPurple.name=Stone Minerals Purple
+tile.DecoStone.stoneCracked.name=Cracked Stone
+tile.DecoStone.stonearrangedBricks.name=Arranged Stone Bricks
+tile.DecoStone.stoneBlocks.name=Stone Blocks
+tile.DecoStone.stoneBlocksDark.name=Dark Stone Blocks
+tile.DecoStone.stoneMinerals.name=Stone Minerals
+tile.DecoStone.stoneMineralsBlue.name=Stone Minerals Blue
+tile.DecoStone.stoneMineralsOrange.name=Stone Minerals Orange
+tile.DecoStone.stoneMineralsPurple.name=Stone Minerals Purple
 #End of Blocks---------------------------------------------------------------------------------------------------
 
 
