@@ -22,12 +22,26 @@ import java.util.ArrayList;
  */
 public class DecoBlocks {
 
+    //Concrete
     public static Block concrete_block = new BlockConcrete(Names.Blocks.CONCRETE, Material.rock);
 
     public static Block deco_concrete = new DecoSubBlocks("DecoConcrete", Material.rock,
             Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS, DecoBlockVarStrings.concreteTypes);
+    //Cottage
+
+
+    //Lava
+
+
+    //Marble
+
+
+    //Metal
     public static Block deco_metal = new DecoSubBlocks("DecoMetal", Material.iron,
             Reference.CRAFT_WITH + Reference.METAL_BLOCKS, DecoBlockVarStrings.metalTypes);
+
+    //Stone
+
 
     /**
      * Initial Registry
@@ -37,6 +51,8 @@ public class DecoBlocks {
      * smelted back into concrete blocks.
      */
     public static void register() {
+
+        //Concrete
         GameRegistry.registerBlock(concrete_block, concrete_block.getUnlocalizedName().substring(5));
         OreDictionary.registerOre(Names.OreDicNames.CONCRETE, concrete_block);
 
@@ -44,22 +60,43 @@ public class DecoBlocks {
         registerOreDicMeta(deco_concrete, Names.OreDicNames.CONCRETE);
         registerOreDicMeta(deco_concrete, Names.OreDicNames.SMELT_TO_CONCRETE);
 
+        //Cottage
+
+        //Lava
+
+        //Marble
+
+        //Metal
         GameRegistry.registerBlock(deco_metal, ItemBlockMeta.class, "DecoMetal");
         registerOreDicMeta(deco_metal, Names.OreDicNames.METAL);
         registerOreDicMeta(deco_metal, Names.OreDicNames.SMELT_TO_CONCRETE);
+
+        //Stone
     }
 
     /**
      * Register the block to be rendered as an item.
      */
     public static void registerRenders() {
-        //Single Blocks
-        registerRender(concrete_block);
 
-        //Blocks with Sub Blocks
+        //Concrete
+        registerRender(concrete_block);
         for (int i = 0; i < DecoBlockVarStrings.concreteTypes.length; i++) registerRender(deco_concrete, i);
 
+        //Cottage
+
+
+        //Lava
+
+
+        //Marble
+
+
+        //Metal
         for (int i = 0; i < DecoBlockVarStrings.metalTypes.length; i++) registerRender(deco_metal, i);
+
+        //Stone
+
     }
 
     /**
