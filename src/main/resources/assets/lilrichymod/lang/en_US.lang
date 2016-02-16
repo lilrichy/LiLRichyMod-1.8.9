@@ -26,15 +26,21 @@ tile.lilrichymod:decorativeBlocks/cottageWindowDark.name=Cottage Window Dark
 tile.lilrichymod:decorativeBlocks/cottageWindowLight.name=Cottage Window Light
 
 #METAL
-tile.lilrichymod:decorativeBlocks/metalBatteredRobot.name=Metal Battered Robot
-tile.lilrichymod:decorativeBlocks/metalBatteredRobotBlue.name=Metal Battered Robot Blue
-tile.lilrichymod:decorativeBlocks/metalBatteredRobotOrange.name=Metal Battered Robot Orange
-tile.lilrichymod:decorativeBlocks/metalBatteredRobotPurple.name=Metal Battered Robot Purple
-tile.lilrichymod:decorativeBlocks/metalBubbleGrip.name=Metal Bubble Grip
-tile.lilrichymod:decorativeBlocks/metalNeedlepointSteel.name=Metal Needlepoint Steel
-tile.lilrichymod:decorativeBlocks/metalRustedIronGrip.name=Metal Rusted Iron Grip
-tile.lilrichymod:decorativeBlocks/metalSeafoamTarnish.name=Metal Sea Foam Tarnish
-tile.lilrichymod:decorativeBlocks/metalStained.name=Metal Stained
+tile.DecoMetal.metalArmor.name=Metal Armor
+tile.DecoMetal.metalBatteredRobot.name=Metal Battered Robot
+tile.DecoMetal.metalBatteredRobotBlue.name=Metal Battered Robot Blue
+tile.DecoMetal.metalBatteredRobotOrange.name=Metal Battered Robot Orange
+tile.DecoMetal.metalBatteredRobotPurple.name=Metal Battered Robot Purple
+tile.DecoMetal.metalBrushedSteel.name=Metal Brushed Steel
+tile.DecoMetal.metalBrushedSteelDark.name=Metal Brushed Steel Dark
+tile.DecoMetal.metalBubbleGrip.name=Metal Bubble Grip
+tile.DecoMetal.metalLaserEtched.name=Metal Laser Etched
+tile.DecoMetal.metalNeedlepointSteel.name=Metal Needlepoint Steel
+tile.DecoMetal.metalPlating.name=Metal Plating
+tile.DecoMetal.metalPlatingDark.name=Metal Plating Dark
+tile.DecoMetal.metalRustedIronGrip.name=Metal Rusted Iron Grip
+tile.DecoMetal.metalSeafoamTarnish.name=Metal Sea Foam Tarnish
+tile.DecoMetal.metalStained.name=Metal Stained
 
 #LAVA
 tile.lilrichymod:decorativeBlocks/lavaBowl.name=Lava Bowl

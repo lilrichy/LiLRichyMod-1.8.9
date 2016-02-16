@@ -24,16 +24,19 @@ public class BlockTableRecipes {
     public BlockTableRecipes() {
         /**
          * Recipe Lists: (output, slot 1 input, slot 2 input) this is the Main recipes for the Block table
-         *Ore Dictionary Recipes - Allow blocks to convert between similar types.
+         * Each Recipie Should have 2 parts the main recipe and the Ore Dictionary part.
+         * Ore Dictionary Recipes - Allow blocks to convert between similar types.
          */
         this.addRecipe(new ItemStack(DecoBlocks.deco_concrete), new ItemStack(DecoBlocks.concrete_block), new ItemStack(ModItems.crushedConcrete));
         for (ItemStack aConcrete : OreDictionary.getOres(Names.OreDicNames.CONCRETE))
             this.addRecipe(new ItemStack(DecoBlocks.deco_concrete), new ItemStack(aConcrete.getItem()), new ItemStack(ModItems.crushedConcrete));
 
+        this.addRecipe(new ItemStack(DecoBlocks.deco_metal), new ItemStack(DecoBlocks.concrete_block), new ItemStack(Items.iron_ingot));
+        for (ItemStack aMetal : OreDictionary.getOres(Names.OreDicNames.METAL))
+            this.addRecipe(new ItemStack(DecoBlocks.deco_metal), new ItemStack(aMetal.getItem()), new ItemStack(Items.iron_ingot));
 
       /**Need to update the Recipies for the following blocks when they are added back to mod*/
         /*
-        this.addRecipe(metalsList, new ItemStack(ModBlocks.concrete), new ItemStack(Items.iron_ingot));
         this.addRecipe(marbleList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.sandstone));
         this.addRecipe(lavaList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.netherrack));
         this.addRecipe(stoneList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.stone));
@@ -43,9 +46,6 @@ public class BlockTableRecipes {
         for (ItemStack aPlanks : OreDictionary.getOres("plankWood"))
             this.addRecipe(cottageList, new ItemStack(ModBlocks.concrete), new ItemStack(aPlanks.getItem()));
 
-
-        for (ItemStack aMetal : OreDictionary.getOres(Names.OreDicNames.METAL))
-            this.addRecipe(metalsList, new ItemStack(aMetal.getItem()), new ItemStack(Items.iron_ingot));
         for (ItemStack aMarble : OreDictionary.getOres(Names.OreDicNames.MARBLE))
             this.addRecipe(marbleList, new ItemStack(aMarble.getItem()), new ItemStack(Blocks.sandstone));
         for (ItemStack aLava : OreDictionary.getOres(Names.OreDicNames.LAVA))

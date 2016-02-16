@@ -19,29 +19,30 @@ import java.util.List;
 /**
  * Created by LiLRichy on 2/15/2016.
  */
-public class DecoConcrete extends DecorativeBlocks implements IMetaBlockName {
+public class DecoSubBlocks extends DecorativeBlocks implements IMetaBlockName {
 
     public static final PropertyEnum TYPE = PropertyEnum.create("type", EnumDecoType.class);
 
     /**
      * String[] with all types of the sub blocks - should match the names/textures/json files
      */
-    public static String[] types = {"arrangedConcreteBricks", "concreteBricks", "concreteBricksDark", "concreteRocks", "concreteSquares",
-            "concreteTexturedBlocks", "fancyConcreteBlocks", "oldConcreteSquares", "smallConcreteBricks", "smallConcreteTexturedSquares"};
+    public String[] types;
 
 
-    public DecoConcrete(String name, Material material, String toolTip, String craftTip) {
-        super(name, material, toolTip, craftTip);
+    public DecoSubBlocks(String name, Material material, String toolTip, String[] types) {
+        super(name, material, toolTip);
         this.setHardness(2f);
         this.setStepSound(soundTypeStone);
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
         this.setUnlocalizedName(name);
         this.setDefaultState(this.blockState.getBaseState().withProperty(TYPE, EnumDecoType.DECOVAR0));
+        this.types = types;
     }
 
     /**
      * Returns the Blockstate based on the Meta Data
      * Must be Accurate with getMetaFromState
+     *
      * @param meta int to get the blockstate from.
      * @return This should be a if/switch with the Enum type.
      */
@@ -76,6 +77,21 @@ public class DecoConcrete extends DecorativeBlocks implements IMetaBlockName {
             case 9:
                 type = EnumDecoType.DECOVAR9;
                 break;
+            case 10:
+                type = EnumDecoType.DECOVAR10;
+                break;
+            case 11:
+                type = EnumDecoType.DECOVAR11;
+                break;
+            case 12:
+                type = EnumDecoType.DECOVAR12;
+                break;
+            case 13:
+                type = EnumDecoType.DECOVAR13;
+                break;
+            case 14:
+                type = EnumDecoType.DECOVAR14;
+                break;
             default: // 0 and undefined
                 type = EnumDecoType.DECOVAR0;
         }
@@ -85,8 +101,8 @@ public class DecoConcrete extends DecorativeBlocks implements IMetaBlockName {
     /**
      * Used to get the meta data from a block this must be
      * accurate with getStateFromMeta
-     * @param state the block state to get the meta value from
      *
+     * @param state the block state to get the meta value from
      * @return the Meta value based on the current state.
      */
     @Override
@@ -97,6 +113,7 @@ public class DecoConcrete extends DecorativeBlocks implements IMetaBlockName {
 
     /**
      * Creates the block states / sub blocks.
+     *
      * @return
      */
     @Override
@@ -106,6 +123,7 @@ public class DecoConcrete extends DecorativeBlocks implements IMetaBlockName {
 
     /**
      * Override to make sure the block drops the correct meta block
+     *
      * @param state the state the block is in
      * @return the meta data of the block state.
      */
@@ -121,6 +139,7 @@ public class DecoConcrete extends DecorativeBlocks implements IMetaBlockName {
 
     /**
      * Returns the types of blocks in a string should use types[] from variables in this class
+     *
      * @param stack The stack to compare the meta from the types[]
      * @return
      */
@@ -129,12 +148,13 @@ public class DecoConcrete extends DecorativeBlocks implements IMetaBlockName {
         return types[stack.getItemDamage()];
     }
 
-    /**Used to get the subBlocks of the main block
+    /**
+     * Used to get the subBlocks of the main block
      * For loop of the types returning a itemstack with meta from the int of the loop.
      *
      * @param itemIn The Item to get the sub blocks from - I think this should be a block or an item but that;s just me.
-     * @param tab Can be null.
-     * @param list is a Itemstack list with the sub blocks
+     * @param tab    Can be null.
+     * @param list   is a Itemstack list with the sub blocks
      */
     @Override
     public void getSubBlocks(Item itemIn, CreativeTabs tab, List list) {
