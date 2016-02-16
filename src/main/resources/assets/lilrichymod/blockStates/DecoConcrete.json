@@ -6,16 +6,16 @@
     },
     "variants": {
         "type": {
-            "decovar0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/arrangedConcreteBricks" } },
+            "decovar0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteArrangedBricks" } },
             "decovar1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteBricks" } },
             "decovar2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteBricksDark" } },
-            "decovar3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteRocks" } },
-            "decovar4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteSquares" } },
-            "decovar5": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteTexturedBlocks" } },
-            "decovar6": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/fancyConcreteBlocks" } },
-            "decovar7": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/oldConcreteSquares" } },
-            "decovar8": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/smallConcreteBricks" } },
-            "decovar9": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/smallConcreteTexturedSquares" } }
+            "decovar3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteFancyBlocks" } },
+            "decovar4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteOldSquares" } },
+            "decovar5": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteRocks" } },
+            "decovar6": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteSmallBricks" } },
+            "decovar7": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteSmallTexturedSquares" } },
+            "decovar8": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteSquares" } },
+            "decovar9": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteTexturedBlocks" } }
         }
     }
 }
