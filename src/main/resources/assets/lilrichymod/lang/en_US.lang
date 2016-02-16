@@ -60,21 +60,23 @@ tile.lilrichymod:decorativeBlocks/marbleBlancoNafin.name=Blanco Nafin Marble
 tile.lilrichymod:decorativeBlocks/marbleSpottedBianco.name=Spotted Bianco Marble
 
 #CONCRETE
-tile.DecoConcrete.arrangedConcreteBricks.name=Arranged Concrete Bricks
 tile.concrete.name=Concrete
-tile.DecoConcrete.fancyConcreteBlocks.name=Fancy Concrete Blocks
+tile.DecoConcrete.concreteArrangedBricks.name=Arranged Concrete Bricks
 tile.DecoConcrete.concreteBricks.name=Concrete Bricks
 tile.DecoConcrete.concreteBricksDark.name=Dark Concrete Bricks
+tile.DecoConcrete.concreteFancyBlocks.name=Fancy Concrete Blocks
+tile.DecoConcrete.concreteOldSquares.name=Old Concrete Squares
 tile.DecoConcrete.concreteRocks.name=Concrete Rocks
-tile.DecoConcrete.concreteTexturedBlocks.name=Textured Concrete Blocks
-tile.DecoConcrete.oldConcreteSquares.name=Old Concrete Squares
 tile.DecoConcrete.concreteSquares.name=Concrete Squares
-tile.DecoConcrete.smallConcreteBricks.name=Small Concrete Bricks
-tile.DecoConcrete.smallConcreteTexturedSquares.name=Small Textured Concrete Squares
+tile.DecoConcrete.concreteSmallBricks.name=Small Concrete Bricks
+tile.DecoConcrete.concreteSmallTexturedSquares.name=Small Textured Concrete Squares
+tile.DecoConcrete.concreteTexturedBlocks.name=Textured Concrete Blocks
+
+
 
 #STONE
-tile.lilrichymod:decorativeBlocks/crackedStone.name=Cracked Stone
-tile.lilrichymod:decorativeBlocks/arrangedStoneBricks.name=Arranged Stone Bricks
+tile.lilrichymod:decorativeBlocks/stoneCracked.name=Cracked Stone
+tile.lilrichymod:decorativeBlocks/stonearrangedBricks.name=Arranged Stone Bricks
 tile.lilrichymod:decorativeBlocks/stoneBlocks.name=Stone Blocks
 tile.lilrichymod:decorativeBlocks/stoneBlocksDark.name=Dark Stone Blocks
 tile.lilrichymod:decorativeBlocks/stoneMinerals.name=Stone Minerals

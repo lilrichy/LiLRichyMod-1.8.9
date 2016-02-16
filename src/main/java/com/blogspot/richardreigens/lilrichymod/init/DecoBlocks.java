@@ -1,7 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.BlockConcrete;
-import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.DecoBlockVarStrings;
+import com.blogspot.richardreigens.lilrichymod.reference.DecoBlockVarStrings;
 import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.DecoSubBlocks;
 import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.ItemBlockMeta;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
