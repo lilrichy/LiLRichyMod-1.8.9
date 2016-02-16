@@ -16,7 +16,6 @@ import java.util.List;
  * Created by Rich on 12/10/2015.
  */
 
-//Todo Switch to varianents = block states
 public class BlockTableRecipes {
     private static final BlockTableRecipes recipes = new BlockTableRecipes();
     private HashMap<List<Integer>, ItemStack> result = new HashMap<List<Integer>, ItemStack>();

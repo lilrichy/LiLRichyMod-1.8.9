@@ -18,23 +18,37 @@ public class ModItems {
     public static final ItemLiLRichyMod concreteMix = new ItemLiLRichyMod(Names.Items.CONCRETE_MIX);
     public static final ItemLiLRichyMod crushedConcrete = new ItemLiLRichyMod(Names.Items.CRUSHED_CONCRETE);
  //   public static final ItemSeeds seedBearedAzailia = new SeedBeardedAzalea(Names.Crops.BEARDED_AZALEA_SEED);
-//    public static final ItemLiLRichyMod essanceOfBeared = new ItemLiLRichyMod(Names.Items.ESSENCE_OF_BEARED);
+    public static final ItemLiLRichyMod essanceOfBeared = new ItemLiLRichyMod(Names.Items.ESSENCE_OF_BEARED);
 
+    /**
+     * Initial Registry
+     */
     public static void init() {
        // GameRegistry.registerItem(deathSock, Names.Items.DEATH_SOCK);
         GameRegistry.registerItem(concreteMix, Names.Items.CONCRETE_MIX);
         GameRegistry.registerItem(crushedConcrete, Names.Items.CRUSHED_CONCRETE);
         //GameRegistry.registerItem(seedBearedAzailia, Names.Crops.BEARDED_AZALEA_SEED);
-       // GameRegistry.registerItem(essanceOfBeared, Names.Items.ESSENCE_OF_BEARED);
+        GameRegistry.registerItem(essanceOfBeared, Names.Items.ESSENCE_OF_BEARED);
     }
 
+    /**
+     * Register the block to be rendered as an item.
+     */
     public static void registerRenders() {
         registerItemRenderer(concreteMix);
         registerItemRenderer(crushedConcrete);
+        registerItemRenderer(essanceOfBeared);
     }
 
-    public static void registerItemRenderer(Item item) {
+    /**
+     *  -------------------------------------------Do Not Change Below-----------------------------------------------
+     */
 
+    /**
+     * Register the Item Renderer
+     * @param item
+     */
+    public static void registerItemRenderer(Item item) {
         ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(
                 Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5)));
     }

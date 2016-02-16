@@ -34,6 +34,8 @@ public class DecoBlocks {
     //Lava
     public static Block deco_lava = new DecoSubBlocks("DecoLava", Material.rock,
             Reference.CRAFT_WITH + Reference.LAVA_BLOCKS, DecoBlockVarStrings.lavaTypes);
+    public static Block deco_lavaBowlColors = new DecoSubBlocks("DecoLavaBowlColors", Material.rock,
+            Reference.CRAFT_WITH + Reference.LAVA_BLOCKS, DecoBlockVarStrings.lavaBowlTypes);
 
     //Marble
     public static Block deco_marble = new DecoSubBlocks("DecoMarble", Material.rock,
@@ -42,10 +44,14 @@ public class DecoBlocks {
     //Metal
     public static Block deco_metal = new DecoSubBlocks("DecoMetal", Material.iron,
             Reference.CRAFT_WITH + Reference.METAL_BLOCKS, DecoBlockVarStrings.metalTypes);
+    public static Block deco_metalRobotColors = new DecoSubBlocks("DecoMetalRobotColors", Material.iron,
+            Reference.CRAFT_WITH + Reference.METAL_BLOCKS, DecoBlockVarStrings.metalRobotTypes);
 
     //Stone
     public static Block deco_stone = new DecoSubBlocks("DecoStone", Material.rock,
             Reference.CRAFT_WITH + Reference.STONE_BLOCKS, DecoBlockVarStrings.stoneTypes);
+    public static Block deco_stoneMineralsColors = new DecoSubBlocks("DecoStoneMineralsColors", Material.rock,
+            Reference.CRAFT_WITH + Reference.STONE_BLOCKS, DecoBlockVarStrings.stoneMineralsTypes);
 
     /**
      * Initial Registry
@@ -74,6 +80,11 @@ public class DecoBlocks {
         GameRegistry.registerBlock(deco_lava, ItemBlockMeta.class, "DecoLava");
         registerOreDicMeta(deco_lava, Names.OreDicNames.LAVA);
         registerOreDicMeta(deco_lava, Names.OreDicNames.SMELT_TO_CONCRETE);
+        GameRegistry.registerBlock(deco_lavaBowlColors, ItemBlockMeta.class, "DecoLavaBowlColors");
+        registerOreDicMeta(deco_lavaBowlColors, Names.OreDicNames.LAVA_BOWL);
+        registerOreDicMeta(deco_lavaBowlColors, Names.OreDicNames.LAVA);
+        registerOreDicMeta(deco_lavaBowlColors, Names.OreDicNames.SMELT_TO_CONCRETE);
+
 
         //Marble
         GameRegistry.registerBlock(deco_marble, ItemBlockMeta.class, "DecoMarble");
@@ -84,11 +95,19 @@ public class DecoBlocks {
         GameRegistry.registerBlock(deco_metal, ItemBlockMeta.class, "DecoMetal");
         registerOreDicMeta(deco_metal, Names.OreDicNames.METAL);
         registerOreDicMeta(deco_metal, Names.OreDicNames.SMELT_TO_CONCRETE);
+        GameRegistry.registerBlock(deco_metalRobotColors, ItemBlockMeta.class, "DecoMetalRobotColors");
+        registerOreDicMeta(deco_metalRobotColors, Names.OreDicNames.METAL_ROBOT);
+        registerOreDicMeta(deco_metalRobotColors, Names.OreDicNames.METAL);
+        registerOreDicMeta(deco_metalRobotColors, Names.OreDicNames.SMELT_TO_CONCRETE);
 
         //Stone
         GameRegistry.registerBlock(deco_stone, ItemBlockMeta.class, "DecoStone");
         registerOreDicMeta(deco_stone, Names.OreDicNames.STONE);
         registerOreDicMeta(deco_stone, Names.OreDicNames.SMELT_TO_CONCRETE);
+        GameRegistry.registerBlock(deco_stoneMineralsColors, ItemBlockMeta.class, "DecoStoneMineralsColors");
+        registerOreDicMeta(deco_stoneMineralsColors, Names.OreDicNames.STONE_MINERALS);
+        registerOreDicMeta(deco_stoneMineralsColors, Names.OreDicNames.STONE);
+        registerOreDicMeta(deco_stoneMineralsColors, Names.OreDicNames.SMELT_TO_CONCRETE);
     }
 
     /**
@@ -101,19 +120,22 @@ public class DecoBlocks {
         for (int i = 0; i < DecoBlockVarStrings.concreteTypes.length; i++) registerRender(deco_concrete, i);
 
         //Cottage
-
+        for (int i = 0; i < DecoBlockVarStrings.cottageTypes.length; i++) registerRender(deco_cottage, i);
 
         //Lava
-
+        for (int i = 0; i < DecoBlockVarStrings.lavaTypes.length; i++) registerRender(deco_lava, i);
+        for (int i = 0; i < DecoBlockVarStrings.lavaBowlTypes.length; i++) registerRender(deco_lavaBowlColors, i);
 
         //Marble
-
+        for (int i = 0; i < DecoBlockVarStrings.marbleTypes.length; i++) registerRender(deco_marble, i);
 
         //Metal
         for (int i = 0; i < DecoBlockVarStrings.metalTypes.length; i++) registerRender(deco_metal, i);
+        for (int i = 0; i < DecoBlockVarStrings.metalRobotTypes.length; i++) registerRender(deco_metalRobotColors, i);
 
         //Stone
-
+        for (int i = 0; i < DecoBlockVarStrings.stoneTypes.length; i++) registerRender(deco_stone, i);
+        for (int i = 0; i < DecoBlockVarStrings.stoneMineralsTypes.length; i++) registerRender(deco_stoneMineralsColors, i);
     }
 
     /**

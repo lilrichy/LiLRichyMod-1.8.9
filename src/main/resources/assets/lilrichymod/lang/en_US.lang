@@ -28,9 +28,6 @@ tile.DecoCottage.cottageWindowLight.name=Cottage Window Light
 #METAL
 tile.DecoMetal.metalArmor.name=Metal Armor
 tile.DecoMetal.metalBatteredRobot.name=Metal Battered Robot
-tile.DecoMetal.metalBatteredRobotBlue.name=Metal Battered Robot Blue
-tile.DecoMetal.metalBatteredRobotOrange.name=Metal Battered Robot Orange
-tile.DecoMetal.metalBatteredRobotPurple.name=Metal Battered Robot Purple
 tile.DecoMetal.metalBrushedSteel.name=Metal Brushed Steel
 tile.DecoMetal.metalBrushedSteelDark.name=Metal Brushed Steel Dark
 tile.DecoMetal.metalBubbleGrip.name=Metal Bubble Grip
@@ -42,16 +39,21 @@ tile.DecoMetal.metalRustedIronGrip.name=Metal Rusted Iron Grip
 tile.DecoMetal.metalSeafoamTarnish.name=Metal Sea Foam Tarnish
 tile.DecoMetal.metalStained.name=Metal Stained
 
+tile.DecoMetalRobotColors.metalBatteredRobotBlue.name=Metal Battered Robot Blue
+tile.DecoMetalRobotColors.metalBatteredRobotOrange.name=Metal Battered Robot Orange
+tile.DecoMetalRobotColors.metalBatteredRobotPurple.name=Metal Battered Robot Purple
+
 #LAVA
 tile.DecoLava.lavaBowl.name=Lava Bowl
-tile.DecoLava.lavaBowlBlue.name=Lava Bowl Blue
-tile.DecoLava.lavaBowlGreen.name=Lava Bowl Green
-tile.DecoLava.lavaBowlPurple.name=Lava Bowl Purple
 tile.DecoLava.lavaCracks.name=Lava Cracks
 tile.DecoLava.lavaDeepFire.name=Lava Deep Fire
 tile.DecoLava.lavaPelesLake.name=Lava Pele's Lake
 tile.DecoLava.lavaSearingGorge.name=Lava Searing Gorge
 tile.DecoLava.lavaSlumberingVolcano.name=Lava Slumbering Volcano
+
+tile.DecoLavaBowlColors.lavaBowlBlue.name=Lava Bowl Blue
+tile.DecoLavaBowlColors.lavaBowlGreen.name=Lava Bowl Green
+tile.DecoLavaBowlColors.lavaBowlPurple.name=Lava Bowl Purple
 
 #MARBLE
 tile.DecoMarble.marbleBlack.name=Black Marble
@@ -78,9 +80,10 @@ tile.DecoStone.stonearrangedBricks.name=Arranged Stone Bricks
 tile.DecoStone.stoneBlocks.name=Stone Blocks
 tile.DecoStone.stoneBlocksDark.name=Dark Stone Blocks
 tile.DecoStone.stoneMinerals.name=Stone Minerals
-tile.DecoStone.stoneMineralsBlue.name=Stone Minerals Blue
-tile.DecoStone.stoneMineralsOrange.name=Stone Minerals Orange
-tile.DecoStone.stoneMineralsPurple.name=Stone Minerals Purple
+
+tile.DecoStoneMineralsColors.stoneMineralsBlue.name=Stone Minerals Blue
+tile.DecoStoneMineralsColors.stoneMineralsOrange.name=Stone Minerals Orange
+tile.DecoStoneMineralsColors.stoneMineralsPurple.name=Stone Minerals Purple
 #End of Blocks---------------------------------------------------------------------------------------------------
 
 
