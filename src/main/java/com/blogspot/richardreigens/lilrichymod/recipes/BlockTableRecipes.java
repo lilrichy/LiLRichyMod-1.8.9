@@ -36,6 +36,10 @@ public class BlockTableRecipes {
         for (ItemStack aMetal : OreDictionary.getOres(Names.OreDicNames.METAL))
             this.addRecipe(new ItemStack(DecoBlocks.deco_metal), new ItemStack(aMetal.getItem()), new ItemStack(Items.iron_ingot));
 
+        this.addRecipe(new ItemStack(DecoBlocks.deco_metalRobotColors), new ItemStack(DecoBlocks.deco_lava.getStateFromMeta(1).getBlock()), new ItemStack(ModItems.essanceOfBeared));
+        for (ItemStack aMetalRobot : OreDictionary.getOres(Names.OreDicNames.METAL_ROBOT))
+            this.addRecipe(new ItemStack(DecoBlocks.deco_metalRobotColors), new ItemStack(aMetalRobot.getItem()), new ItemStack(ModItems.essanceOfBeared));
+
         //Marble
         this.addRecipe(new ItemStack(DecoBlocks.deco_marble), new ItemStack(DecoBlocks.concrete_block), new ItemStack(Blocks.sandstone));
         for (ItemStack aMarble : OreDictionary.getOres(Names.OreDicNames.MARBLE))
@@ -46,10 +50,18 @@ public class BlockTableRecipes {
         for (ItemStack aLava : OreDictionary.getOres(Names.OreDicNames.LAVA))
             this.addRecipe(new ItemStack(DecoBlocks.deco_lava), new ItemStack(aLava.getItem()), new ItemStack(Blocks.netherrack));
 
+        this.addRecipe(new ItemStack(DecoBlocks.deco_lavaBowlColors), new ItemStack(DecoBlocks.deco_lava.getStateFromMeta(0).getBlock()), new ItemStack(ModItems.essanceOfBeared));
+        for (ItemStack aLavaBowl : OreDictionary.getOres(Names.OreDicNames.LAVA_BOWL))
+            this.addRecipe(new ItemStack(DecoBlocks.deco_lavaBowlColors), new ItemStack(aLavaBowl.getItem()), new ItemStack(ModItems.essanceOfBeared));
+
         //Stone
         this.addRecipe(new ItemStack(DecoBlocks.deco_stone), new ItemStack(DecoBlocks.concrete_block), new ItemStack(Blocks.stone));
         for (ItemStack aStone : OreDictionary.getOres(Names.OreDicNames.STONE))
             this.addRecipe(new ItemStack(DecoBlocks.deco_stone), new ItemStack(aStone.getItem()), new ItemStack(Blocks.stone));
+
+        this.addRecipe(new ItemStack(DecoBlocks.deco_stoneMineralsColors), new ItemStack(DecoBlocks.deco_stone.getStateFromMeta(5).getBlock()), new ItemStack(ModItems.essanceOfBeared));
+        for (ItemStack aMinerals : OreDictionary.getOres(Names.OreDicNames.STONE_MINERALS))
+            this.addRecipe(new ItemStack(DecoBlocks.deco_stoneMineralsColors), new ItemStack(aMinerals.getItem()), new ItemStack(ModItems.essanceOfBeared));
 
         //Cottage
         for (ItemStack aPlanks : OreDictionary.getOres("plankWood"))
@@ -61,15 +73,6 @@ public class BlockTableRecipes {
 
             //TODO Need to update the Recipies for the following blocks when they are added back to mod
             /*
-                this.addRecipe(lavaBowlListColor, new ItemStack(ModBlocks.lavaBowl), new ItemStack(ModItems.essanceOfBeared));
-                this.addRecipe(metalRobotListColor, new ItemStack(ModBlocks.metalBatteredRobot), new ItemStack(ModItems.essanceOfBeared));
-
-                for (ItemStack aLavaBowl : OreDictionary.getOres(Names.OreDicNames.LAVA_BOWL))
-                    this.addRecipe(lavaBowlListColor, new ItemStack(aLavaBowl.getItem()), new ItemStack(ModItems.essanceOfBeared));
-                for (ItemStack aMetalRobot : OreDictionary.getOres(Names.OreDicNames.METAL_ROBOT))
-                    this.addRecipe(metalRobotListColor, new ItemStack(aMetalRobot.getItem()), new ItemStack(ModItems.essanceOfBeared));
-                for (ItemStack aMinerals : OreDictionary.getOres(Names.OreDicNames.STONE_MINERALS))
-                    this.addRecipe(stoneMineralsListColors, new ItemStack(aMinerals.getItem()), new ItemStack(ModItems.essanceOfBeared));
                 for (ItemStack aGlass : OreDictionary.getOres("blockGlass"))
                     this.addRecipe(glassList, new ItemStack(aGlass.getItem()), new ItemStack(ModItems.essanceOfBeared));
              */
