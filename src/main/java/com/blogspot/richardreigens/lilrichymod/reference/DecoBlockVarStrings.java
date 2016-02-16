@@ -18,28 +18,6 @@ public class DecoBlockVarStrings {
             "concreteTexturedBlocks"
     };
 
-    public static String[] metalTypes = {
-            "metalArmor",
-            "metalBatteredRobot",
-            "metalBrushedSteel",
-            "metalBrushedSteelDark",
-            "metalBubbleGrip",
-            "metalLaserEtched",
-            "metalNeedlepointSteel",
-            "metalPlating",
-            "metalPlatingDark",
-            "metalRustedIronGrip",
-            "metalSeafoamTarnish",
-            "metalStained"
-    };
-
-    public static String[] metalRobotTypes ={
-            "metalBatteredRobotBlue",
-            "metalBatteredRobotOrange",
-            "metalBatteredRobotPurple"
-    };
-
-
     public static String[] cottageTypes = {
             "cottageWall",
             "cottageWallArchedBeam",
@@ -75,6 +53,27 @@ public class DecoBlockVarStrings {
             "marbleSpottedBianco"
     };
 
+    public static String[] metalTypes = {
+            "metalArmor",
+            "metalBatteredRobot",
+            "metalBrushedSteel",
+            "metalBrushedSteelDark",
+            "metalBubbleGrip",
+            "metalLaserEtched",
+            "metalNeedlepointSteel",
+            "metalPlating",
+            "metalPlatingDark",
+            "metalRustedIronGrip",
+            "metalSeafoamTarnish",
+            "metalStained"
+    };
+
+    public static String[] metalRobotTypes ={
+            "metalBatteredRobotBlue",
+            "metalBatteredRobotOrange",
+            "metalBatteredRobotPurple"
+    };
+
     public static String[] stoneTypes = {
             "stonearrangedBricks",
             "stoneBlocks",
@@ -85,5 +84,4 @@ public class DecoBlockVarStrings {
             "stoneMineralsOrange",
             "stoneMineralsPurple"
     };
-
 }
