@@ -1,14 +1,14 @@
 package com.blogspot.richardreigens.lilrichymod.recipes;
 
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
-import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
+import com.blogspot.richardreigens.lilrichymod.init.DecoBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import com.blogspot.richardreigens.lilrichymod.init.ModTileEntity;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 
 /**
@@ -19,30 +19,30 @@ public class Recipes {
 
         blockRecipes();
         tileRecipes();
-        StairsRecipes.init();
-        PanesRecipes.init();
+        //StairsRecipes.init();
+        //PanesRecipes.init();
 
         if (ConfigurationHandler.smeltingRecipes) smeltingRecipes();
         if (ConfigurationHandler.itemRecipes) ItemRecipes.init();
-        if (ConfigurationHandler.panelRecipes) PanelsRecipes.init();
+       // if (ConfigurationHandler.panelRecipes) PanelsRecipes.init();
         if (ConfigurationHandler.thermalExpansionRecipes) ModCompatRecipes.thermalExpansionRecipesInit();
         if (ConfigurationHandler.enderIORecipies) ModCompatRecipes.enderIORecipesInit();
     }
 
     public static void blockRecipes() {
         //Concrete
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.concrete),
+        GameRegistry.addShapelessRecipe(new ItemStack(DecoBlocks.concrete_block),
                 new ItemStack(ModItems.crushedConcrete), new ItemStack(ModItems.crushedConcrete),
                 new ItemStack(ModItems.crushedConcrete), new ItemStack(ModItems.crushedConcrete));
     }
 
     public static void smeltingRecipes() {
         //Concrete
-        GameRegistry.addSmelting(new ItemStack(ModItems.concreteMix), new ItemStack(ModBlocks.concrete), 0.1f);
+        GameRegistry.addSmelting(new ItemStack(ModItems.concreteMix), new ItemStack(DecoBlocks.concrete_block), 0.1f);
 
         //Smelt Blocks back to Concrete
         for (ItemStack aList : OreDictionary.getOres(Names.OreDicNames.SMELT_TO_CONCRETE)) {
-            GameRegistry.addSmelting(new ItemStack(aList.getItem()), new ItemStack(ModBlocks.concrete), 0.1f);
+            GameRegistry.addSmelting(new ItemStack(aList.getItem()), new ItemStack(DecoBlocks.concrete_block), 0.1f);
         }
     }
 

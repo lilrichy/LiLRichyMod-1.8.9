@@ -4,6 +4,7 @@ import com.blogspot.richardreigens.lilrichymod.init.ModTileEntity;
 import com.blogspot.richardreigens.lilrichymod.recipes.BlockTableRecipes;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import com.blogspot.richardreigens.lilrichymod.tileEntity.TileEntityLiLRichyMod;
+import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -14,6 +15,8 @@ import net.minecraft.network.Packet;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.util.IChatComponent;
 import net.minecraft.util.ITickable;
+
+import java.util.ArrayList;
 
 /**
  * Created by Rich on 12/8/2015.
@@ -30,7 +33,7 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
     public ItemStack[] input;
     private int decreaseAmt = 0;
     private ItemStack[] itemStacks = new ItemStack[TOTAL_SLOTS_COUNT];
-    private ItemStack[] resultItemStack = new ItemStack[0];
+    private ItemStack resultItemStack;
 
     // Return true if the given stack is allowed to be inserted in the given slot
     static public boolean isItemValidForBlockInputSlot(ItemStack itemStack) {
@@ -61,7 +64,7 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
         }
     }
 
-    public ItemStack[] getCurrentRecipe() {
+    public ItemStack getCurrentRecipe() {
         if (inputHasItems()) {
             if (BlockTableRecipes.recipes().getCraftingResult(getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1)) != null) {
                 return BlockTableRecipes.recipes().getCraftingResult(getStackInSlot(FIRST_INPUT_SLOT), getStackInSlot(FIRST_INPUT_SLOT + 1));
@@ -78,6 +81,7 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
             worldObj.playSoundEffect((double) this.pos.getX() + 0.5D, (double) this.pos.getY() + 0.5D,
                     (double) this.pos.getZ() + 0.5D, Reference.MOD_ID + ":" + "blockTableCraftSound", 0.3F, .1f);
             this.markDirty();
+
         }
     }
 
@@ -117,9 +121,12 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
 
     public void updateOutputSlots() {
         clearOutput();
-        for (int i = 0; i < resultItemStack.length; i++) {
-            ItemStack stack = new ItemStack(resultItemStack[i].getItem());
-            stack.stackSize = decreaseAmt;
+        Block block = Block.getBlockFromItem(resultItemStack.getItem());
+        ArrayList<ItemStack> list = new ArrayList<ItemStack>();
+        block.getSubBlocks(resultItemStack.getItem(), null, list);
+
+        for (int i = 0; i < list.size(); i++) {
+            ItemStack stack = new ItemStack(resultItemStack.getItem(), decreaseAmt, i);
             setInventorySlotContents(FIRST_OUTPUT_SLOT + i, stack);
         }
     }
@@ -284,7 +291,7 @@ public class TileEntityBlockTable extends TileEntityLiLRichyMod implements IInve
 */
     @Override
     public String getName() {
-         return ModTileEntity.blockTable.getUnlocalizedName() + ".name";
+        return ModTileEntity.blockTable.getUnlocalizedName() + ".name";
     }
 
     @Override

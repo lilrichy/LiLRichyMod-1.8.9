@@ -1,3 +1,4 @@
+/*
 package com.blogspot.richardreigens.lilrichymod.recipes;
 
 import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
@@ -5,9 +6,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 
+*/
 /**
  * Created by Rich on 12/7/2015.
- */
+ *//*
+
 public class PanelsRecipes {
     public static void init() {
         //Plank Panels
@@ -49,3 +52,4 @@ public class PanelsRecipes {
                 'w', new ItemStack(Blocks.log, 1, 1), 'p', new ItemStack(Blocks.glass_pane));
     }
 }
+*/

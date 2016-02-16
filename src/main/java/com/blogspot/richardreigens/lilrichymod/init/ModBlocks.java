@@ -1,3 +1,4 @@
+/*
 package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.blocks.LiLRichyPanel;
@@ -13,9 +14,11 @@ import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 
+*/
 /**
  * Created by Rich on 11/19/2015.
- */
+ *//*
+
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModBlocks {
@@ -25,147 +28,147 @@ public class ModBlocks {
     //Decorative Blocks ------------------------------------------------------------------------------------------------
 //Todo Re add all stairs blocks
     //LAVA_BOWL
-    public static final DecorativeBlocks lavaBowl = new DecorativeBlocks(
+    public static final DecoBlocks lavaBowl = new DecoBlocks(
             Names.Blocks.LAVA_BOWL, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
   //  public static final LiLRichyStairs lavaBowlStairs = new LiLRichyStairs(Names.Blocks.LAVA_BOWL + "Stairs", lavaBowl, 0);
 
-    public static final DecorativeBlocks lavaBowlBlue = new DecorativeBlocks(
+    public static final DecoBlocks lavaBowlBlue = new DecoBlocks(
             Names.Blocks.LAVA_BOWL_BLUE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.LAVA_BOWL_COLORS);
     //public static final LiLRichyStairs lavaBowlBlueStairs = new LiLRichyStairs(Names.Blocks.LAVA_BOWL_BLUE + "Stairs", lavaBowlBlue, 0);
 
-    public static final DecorativeBlocks lavaBowlGreen = new DecorativeBlocks(
+    public static final DecoBlocks lavaBowlGreen = new DecoBlocks(
             Names.Blocks.LAVA_BOWL_GREEN, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.LAVA_BOWL_COLORS);
     //public static final LiLRichyStairs lavaBowlGreenStairs = new LiLRichyStairs(Names.Blocks.LAVA_BOWL_GREEN + "Stairs", lavaBowlGreen, 0);
 
-    public static final DecorativeBlocks lavaBowlPurple = new DecorativeBlocks(
+    public static final DecoBlocks lavaBowlPurple = new DecoBlocks(
             Names.Blocks.LAVA_BOWL_PURPLE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.LAVA_BOWL_COLORS);
     //public static final LiLRichyStairs lavaBowlPurpleStairs = new LiLRichyStairs(Names.Blocks.LAVA_BOWL_PURPLE + "Stairs", lavaBowlPurple, 0);
 
     //LAVA_CRACKS
-    public static final DecorativeBlocks lavaCracks = new DecorativeBlocks(
+    public static final DecoBlocks lavaCracks = new DecoBlocks(
             Names.Blocks.LAVA_CRACKS, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
     //public static final LiLRichyStairs lavaCracksStairs = new LiLRichyStairs(Names.Blocks.LAVA_CRACKS + "Stairs", lavaCracks, 0);
 
     //LAVA_DEEP_FIRE
-    public static final DecorativeBlocks lavaDeepFire = new DecorativeBlocks(
+    public static final DecoBlocks lavaDeepFire = new DecoBlocks(
             Names.Blocks.LAVA_DEEP_FIRE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
     //public static final LiLRichyStairs lavaDeepFireStairs = new LiLRichyStairs(Names.Blocks.LAVA_DEEP_FIRE + "Stairs", lavaDeepFire, 0);
 
     //LAVA_PELES_LAKE
-    public static final DecorativeBlocks lavaPelesLake = new DecorativeBlocks(
+    public static final DecoBlocks lavaPelesLake = new DecoBlocks(
             Names.Blocks.LAVA_PELES_LAKE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
     //public static final LiLRichyStairs lavaPelesLakeStairs = new LiLRichyStairs(Names.Blocks.LAVA_PELES_LAKE + "Stairs", lavaPelesLake, 0);
 
     //LAVA_SEARING_GORGE
-    public static final DecorativeBlocks lavaSearingGorge = new DecorativeBlocks(
+    public static final DecoBlocks lavaSearingGorge = new DecoBlocks(
             Names.Blocks.LAVA_SEARING_GORGE, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
     //public static final LiLRichyStairs lavaSearingGorgeStairs = new LiLRichyStairs(Names.Blocks.LAVA_SEARING_GORGE + "Stairs", lavaSearingGorge, 0);
 
     //LAVA_SLUMBERING_VOLCANO
-    public static final DecorativeBlocks lavaVolcano = new DecorativeBlocks(
+    public static final DecoBlocks lavaVolcano = new DecoBlocks(
             Names.Blocks.LAVA_SLUMBERING_VOLCANO, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.LAVA_BLOCKS);
     //public static final LiLRichyStairs lavaVolcanoStairs = new LiLRichyStairs(Names.Blocks.LAVA_SLUMBERING_VOLCANO + "Stairs", lavaVolcano, 0);
 
     //METAL_BATTERED_ROBOT
-    public static final DecorativeBlocks metalBatteredRobot = new DecorativeBlocks(
+    public static final DecoBlocks metalBatteredRobot = new DecoBlocks(
             Names.Blocks.METAL_BATTERED_ROBOT, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
     //public static final LiLRichyStairs metalBatteredRobotStairs = new LiLRichyStairs(Names.Blocks.METAL_BATTERED_ROBOT + "Stairs", metalBatteredRobot, 0);
 
-    public static final DecorativeBlocks metalBatteredRobotBlue = new DecorativeBlocks(
+    public static final DecoBlocks metalBatteredRobotBlue = new DecoBlocks(
             Names.Blocks.METAL_BATTERED_ROBOT_BLUE, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.METAL_ROBOT_COLORS);
     //public static final LiLRichyStairs metalBatteredRobotBlueStairs = new LiLRichyStairs(Names.Blocks.METAL_BATTERED_ROBOT_BLUE + "Stairs", metalBatteredRobotBlue, 0);
 
-    public static final DecorativeBlocks metalBatteredRobotOrange = new DecorativeBlocks(
+    public static final DecoBlocks metalBatteredRobotOrange = new DecoBlocks(
             Names.Blocks.METAL_BATTERED_ROBOT_ORANGE, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.METAL_ROBOT_COLORS);
     //public static final LiLRichyStairs metalBatteredRobotOrangeStairs = new LiLRichyStairs(Names.Blocks.METAL_BATTERED_ROBOT_ORANGE + "Stairs", metalBatteredRobotOrange, 0);
 
-    public static final DecorativeBlocks metalBatteredRobotPurple = new DecorativeBlocks(
+    public static final DecoBlocks metalBatteredRobotPurple = new DecoBlocks(
             Names.Blocks.METAL_BATTERED_ROBOT_PURPLE, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.METAL_ROBOT_COLORS);
     //public static final LiLRichyStairs metalBatteredRobotPurpleStairs = new LiLRichyStairs(Names.Blocks.METAL_BATTERED_ROBOT_PURPLE + "Stairs", metalBatteredRobotPurple, 0);
 
     //METAL_BATTERED_ROBOT_BLUE
-    public static final DecorativeBlocks metalBubbleGrip = new DecorativeBlocks(
+    public static final DecoBlocks metalBubbleGrip = new DecoBlocks(
             Names.Blocks.METAL_BUBBLE_GRIP, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
     //public static final LiLRichyStairs metalBubbleGripStairs = new LiLRichyStairs(Names.Blocks.METAL_BUBBLE_GRIP + "Stairs", metalBubbleGrip, 0);
 
     //METAL_NEEDLEPOINT_STEEL
-    public static final DecorativeBlocks metalNeedlepointSteel = new DecorativeBlocks(
+    public static final DecoBlocks metalNeedlepointSteel = new DecoBlocks(
             Names.Blocks.METAL_NEEDLEPOINT_STEEL, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
     //public static final LiLRichyStairs metalNeedlepointSteelStairs = new LiLRichyStairs(Names.Blocks.METAL_NEEDLEPOINT_STEEL + "Stairs", metalNeedlepointSteel, 0);
 
     //METAL_RUSTED_IRON_GRIP
-    public static final DecorativeBlocks metalRustedIronGrip = new DecorativeBlocks(
+    public static final DecoBlocks metalRustedIronGrip = new DecoBlocks(
             Names.Blocks.METAL_RUSTED_IRON_GRIP, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
     //public static final LiLRichyStairs metalRustedIronGripStairs = new LiLRichyStairs(Names.Blocks.METAL_RUSTED_IRON_GRIP + "Stairs", metalRustedIronGrip, 0);
 
     //METAL_SEAFOAM_TARNISH
-    public static final DecorativeBlocks metalSeafoamTarnish = new DecorativeBlocks(
+    public static final DecoBlocks metalSeafoamTarnish = new DecoBlocks(
             Names.Blocks.METAL_SEAFOAM_TARNISH, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
     //public static final LiLRichyStairs metalSeafoamTarnishStairs = new LiLRichyStairs(Names.Blocks.METAL_SEAFOAM_TARNISH + "Stairs", metalSeafoamTarnish, 0);
 
     //METAL_STAINED
-    public static final DecorativeBlocks metalStained = new DecorativeBlocks(
+    public static final DecoBlocks metalStained = new DecoBlocks(
             Names.Blocks.METAL_STAINED, Material.iron, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.METAL_BLOCKS);
     //public static final LiLRichyStairs metalStainedStairs = new LiLRichyStairs(Names.Blocks.METAL_STAINED + "Stairs", metalStained, 0);
 
     //MARBLE_BLACK
-    public static final DecorativeBlocks marbleBlack = new DecorativeBlocks(
+    public static final DecoBlocks marbleBlack = new DecoBlocks(
             Names.Blocks.MARBLE_BLACK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.MARBLE_BLOCKS);
     //public static final LiLRichyStairs marbleBlackStairs = new LiLRichyStairs(Names.Blocks.MARBLE_BLACK + "Stairs", marbleBlack, 0);
 
     //MARBLE_BLANCO_AURORA
-    public static final DecorativeBlocks marbleBlancoAurora = new DecorativeBlocks(
+    public static final DecoBlocks marbleBlancoAurora = new DecoBlocks(
             Names.Blocks.MARBLE_BLANCO_AURORA, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.MARBLE_BLOCKS);
     //public static final LiLRichyStairs marbleBlancoAuroraStairs = new LiLRichyStairs(Names.Blocks.MARBLE_BLANCO_AURORA + "Stairs", marbleBlancoAurora, 0);
 
     //MARBLE_BLANCO_NAFIN
-    public static final DecorativeBlocks marbleBlancoNafin = new DecorativeBlocks(
+    public static final DecoBlocks marbleBlancoNafin = new DecoBlocks(
             Names.Blocks.MARBLE_BLANCO_NAFIN, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.MARBLE_BLOCKS);
     //public static final LiLRichyStairs marbleBlancoNafinStairs = new LiLRichyStairs(Names.Blocks.MARBLE_BLANCO_NAFIN + "Stairs", marbleBlancoNafin, 0);
 
     //MARBLE_SPOTTED_BIANCO
-    public static final DecorativeBlocks marbleSpottedBianco = new DecorativeBlocks(
+    public static final DecoBlocks marbleSpottedBianco = new DecoBlocks(
             Names.Blocks.MARBLE_SPOTTED_BIANCO, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.MARBLE_BLOCKS);
     //public static final LiLRichyStairs marbleSpottedBiancoStairs = new LiLRichyStairs(Names.Blocks.MARBLE_SPOTTED_BIANCO + "Stairs", marbleSpottedBianco, 0);
 
     //COTTAGE - Skipping Stairs and slabs
-    public static final DecorativeBlocks cottageWall = new DecorativeBlocks(
+    public static final DecoBlocks cottageWall = new DecoBlocks(
             Names.Blocks.COTTAGE_WALL, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
 
     //COTTAGE_WALL_ARCHED_BEAM - Skipping Stairs and slabs
-    public static final DecorativeBlocks cottageWallArchedBeam = new DecorativeBlocks(
+    public static final DecoBlocks cottageWallArchedBeam = new DecoBlocks(
             Names.Blocks.COTTAGE_WALL_ARCHED_BEAM, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
 
     //COTTAGE_WALL_ARCHED_BEAM_DARK - Skipping Stairs and slabs
-    public static final DecorativeBlocks cottageWallArchedBeamDark = new DecorativeBlocks(
+    public static final DecoBlocks cottageWallArchedBeamDark = new DecoBlocks(
             Names.Blocks.COTTAGE_WALL_ARCHED_BEAM_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
 
     //COTTAGE_WALL_DARK - Skipping Stairs and slabs
-    public static final DecorativeBlocks cottageWallDark = new DecorativeBlocks(
+    public static final DecoBlocks cottageWallDark = new DecoBlocks(
             Names.Blocks.COTTAGE_WALL_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
 
     //COTTAGE_WALL_PANEL_DARK - Skipping Stairs and slabs
-    public static final DecorativeBlocks cottageWallPanelDark = new DecorativeBlocks(
+    public static final DecoBlocks cottageWallPanelDark = new DecoBlocks(
             Names.Blocks.COTTAGE_WALL_PANEL_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
 
     //COTTAGE_WALL_PANEL_LIGHT - Skipping Stairs and slabs
-    public static final DecorativeBlocks cottageWallPanelLight = new DecorativeBlocks(
+    public static final DecoBlocks cottageWallPanelLight = new DecoBlocks(
             Names.Blocks.COTTAGE_WALL_PANEL_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
 
     //COTTAGE_WALL_X_DARK - Skipping Stairs and slabs
-    public static final DecorativeBlocks cottageWallXDark = new DecorativeBlocks(
+    public static final DecoBlocks cottageWallXDark = new DecoBlocks(
             Names.Blocks.COTTAGE_WALL_X_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
 
     //COTTAGE_WALL_X_LIGHT - Skipping Stairs and slabs
-    public static final DecorativeBlocks cottageWallXLight = new DecorativeBlocks(
+    public static final DecoBlocks cottageWallXLight = new DecoBlocks(
             Names.Blocks.COTTAGE_WALL_X_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
 
     //COTTAGE_WINDOW_DARK - Skipping Stairs and slabs
-    public static final DecorativeBlocks cottageWindowDark = new DecorativeBlocks(
+    public static final DecoBlocks cottageWindowDark = new DecoBlocks(
             Names.Blocks.COTTAGE_WINDOW_DARK, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
 
     //COTTAGE_WINDOW_LIGHT - Skipping Stairs and slabs
-    public static final DecorativeBlocks cottageWindowLight = new DecorativeBlocks(
+    public static final DecoBlocks cottageWindowLight = new DecoBlocks(
             Names.Blocks.COTTAGE_WINDOW_LIGHT, Material.rock, Reference.MADE_BY + Reference.SPIRAL_GRAPHICS, Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS);
 
     //CONCRETE - Skipping Stairs and slabs
@@ -173,89 +176,89 @@ public class ModBlocks {
             Names.Blocks.CONCRETE, Material.rock);
 
     //FANCY_CONCRETE_BLOCKS
-    public static final DecorativeBlocks fancyConcreteBlocks = new DecorativeBlocks(
+    public static final DecoBlocks fancyConcreteBlocks = new DecoBlocks(
             Names.Blocks.FANCY_CONCRETE_BLOCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
     //public static final LiLRichyStairs fancyConcreteBlocksStairs = new LiLRichyStairs(Names.Blocks.FANCY_CONCRETE_BLOCKS + "Stairs", fancyConcreteBlocks, 0);
 
     //CONCRETE_BRICKS
-    public static final DecorativeBlocks concreteBricks = new DecorativeBlocks(
+    public static final DecoBlocks concreteBricks = new DecoBlocks(
             Names.Blocks.CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
     //public static final LiLRichyStairs concreteBricksStairs = new LiLRichyStairs(Names.Blocks.CONCRETE_BRICKS + "Stairs", concreteBricks, 0);
 
     //CONCRETE_BRICKS_DARK
-    public static final DecorativeBlocks concreteBricksDark = new DecorativeBlocks(
+    public static final DecoBlocks concreteBricksDark = new DecoBlocks(
             Names.Blocks.CONCRETE_BRICKS_DARK, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
     //public static final LiLRichyStairs concreteBricksDarkStairs = new LiLRichyStairs(Names.Blocks.CONCRETE_BRICKS_DARK + "Stairs", concreteBricksDark, 0);
 
     //CONCRETE_ROCKS
-    public static final DecorativeBlocks concreteRocks = new DecorativeBlocks(
+    public static final DecoBlocks concreteRocks = new DecoBlocks(
             Names.Blocks.CONCRETE_ROCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
     //public static final LiLRichyStairs concreteRocksStairs = new LiLRichyStairs(Names.Blocks.CONCRETE_ROCKS + "Stairs", concreteRocks, 0);
 
     //CONCRETE_TEXTURED_BLOCKS
-    public static final DecorativeBlocks concreteTexturedBlocks = new DecorativeBlocks(
+    public static final DecoBlocks concreteTexturedBlocks = new DecoBlocks(
             Names.Blocks.CONCRETE_TEXTURED_BLOCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
 //    public static final LiLRichyStairs concreteTexturedBlocksStairs = new LiLRichyStairs(Names.Blocks.CONCRETE_TEXTURED_BLOCKS + "Stairs", concreteTexturedBlocks, 0);
 
     //OLD_CONCRETE_SQUARES
-    public static final DecorativeBlocks oldConcreteSquares = new DecorativeBlocks(
+    public static final DecoBlocks oldConcreteSquares = new DecoBlocks(
             Names.Blocks.OLD_CONCRETE_SQUARES, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
 //    public static final LiLRichyStairs oldConcreteSquaresStairs = new LiLRichyStairs(Names.Blocks.OLD_CONCRETE_SQUARES + "Stairs", oldConcreteSquares, 0);
 
     //CONCRETE_SQUARES
-    public static final DecorativeBlocks concreteSquares = new DecorativeBlocks(
+    public static final DecoBlocks concreteSquares = new DecoBlocks(
             Names.Blocks.CONCRETE_SQUARES, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
 //    public static final LiLRichyStairs concreteSquaresStairs = new LiLRichyStairs(Names.Blocks.CONCRETE_SQUARES + "Stairs", concreteSquares, 0);
 
     //SMALL_CONCRETE_BRICKS
-    public static final DecorativeBlocks smallConcreteBricks = new DecorativeBlocks(
+    public static final DecoBlocks smallConcreteBricks = new DecoBlocks(
             Names.Blocks.SMALL_CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
 //    public static final LiLRichyStairs smallConcreteBricksStairs = new LiLRichyStairs(Names.Blocks.SMALL_CONCRETE_BRICKS + "Stairs", smallConcreteBricks, 0);
 
     //SMALL_CONCRETE_TEXTURED_SQUARES
-    public static final DecorativeBlocks smallConcreteTexturedSquares = new DecorativeBlocks(
+    public static final DecoBlocks smallConcreteTexturedSquares = new DecoBlocks(
             Names.Blocks.SMALL_CONCRETE_TEXTURED_SQUARES, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
 //    public static final LiLRichyStairs smallConcreteTexturedSquaresStairs = new LiLRichyStairs(Names.Blocks.SMALL_CONCRETE_TEXTURED_SQUARES + "Stairs", smallConcreteTexturedSquares, 0);
 
     //ARRANGED_CONCRETE_BRICKS
-    public static final DecorativeBlocks arrangedConcreteBricks = new DecorativeBlocks(
+    public static final DecoBlocks arrangedConcreteBricks = new DecoBlocks(
             Names.Blocks.ARRANGED_CONCRETE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS);
 //    public static final LiLRichyStairs arrangedConcreteBricksStairs = new LiLRichyStairs(Names.Blocks.ARRANGED_CONCRETE_BRICKS + "Stairs", arrangedConcreteBricks, 0);
 
     //CRACKED_STONE
-    public static final DecorativeBlocks crackedStone = new DecorativeBlocks(
+    public static final DecoBlocks crackedStone = new DecoBlocks(
             Names.Blocks.CRACKED_STONE, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_BLOCKS);
 //    public static final LiLRichyStairs crackedStoneStairs = new LiLRichyStairs(Names.Blocks.CRACKED_STONE + "Stairs", crackedStone, 0);
 
     //ARRANGED_STONE_BRICKS
-    public static final DecorativeBlocks arrangedStoneBricks = new DecorativeBlocks(
+    public static final DecoBlocks arrangedStoneBricks = new DecoBlocks(
             Names.Blocks.ARRANGED_STONE_BRICKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_BLOCKS);
 //    public static final LiLRichyStairs arrangedStoneBricksStairs = new LiLRichyStairs(Names.Blocks.ARRANGED_STONE_BRICKS + "Stairs", arrangedStoneBricks, 0);
 
     //STONE_BLOCKS
-    public static final DecorativeBlocks stoneBlocks = new DecorativeBlocks(
+    public static final DecoBlocks stoneBlocks = new DecoBlocks(
             Names.Blocks.STONE_BLOCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_BLOCKS);
 //    public static final LiLRichyStairs stoneBlocksStairs = new LiLRichyStairs(Names.Blocks.STONE_BLOCKS + "Stairs", stoneBlocks, 0);
 
     //DARK_STONE_BLOCKS
-    public static final DecorativeBlocks darkStoneBlocks = new DecorativeBlocks(
+    public static final DecoBlocks darkStoneBlocks = new DecoBlocks(
             Names.Blocks.DARK_STONE_BLOCKS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_BLOCKS);
 //    public static final LiLRichyStairs darkStoneBlocksStairs = new LiLRichyStairs(Names.Blocks.DARK_STONE_BLOCKS + "Stairs", darkStoneBlocks, 0);
 
     //STONE_MINERALS
-    public static final DecorativeBlocks stoneMinerals = new DecorativeBlocks(
+    public static final DecoBlocks stoneMinerals = new DecoBlocks(
             Names.Blocks.STONE_MINERALS, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.CRAFT_WITH + Reference.STONE_BLOCKS);
 //    public static final LiLRichyStairs stoneMineralsStairs = new LiLRichyStairs(Names.Blocks.STONE_MINERALS + "Stairs", stoneMinerals, 0);
 
-    public static final DecorativeBlocks stoneMineralsBlue = new DecorativeBlocks(
+    public static final DecoBlocks stoneMineralsBlue = new DecoBlocks(
             Names.Blocks.STONE_MINERALS_BLUE, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.STONE_MINERALS_COLORS_CRAFT);
 //    public static final LiLRichyStairs stoneMineralsBlueStairs = new LiLRichyStairs(Names.Blocks.STONE_MINERALS_BLUE + "Stairs", stoneMineralsBlue, 0);
 
-    public static final DecorativeBlocks stoneMineralsOrange = new DecorativeBlocks(
+    public static final DecoBlocks stoneMineralsOrange = new DecoBlocks(
             Names.Blocks.STONE_MINERALS_ORANGE, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.STONE_MINERALS_COLORS_CRAFT);
 //    public static final LiLRichyStairs stoneMineralsOrangeStairs = new LiLRichyStairs(Names.Blocks.STONE_MINERALS_ORANGE + "Stairs", stoneMineralsOrange, 0);
 
-    public static final DecorativeBlocks stoneMineralsPurple = new DecorativeBlocks(
+    public static final DecoBlocks stoneMineralsPurple = new DecoBlocks(
             Names.Blocks.STONE_MINERALS_PURPLE, Material.rock, Reference.MADE_BY + Reference.LILRICHY, Reference.STONE_MINERALS_COLORS_CRAFT);
 //    public static final LiLRichyStairs stoneMineralsPurpleStairs = new LiLRichyStairs(Names.Blocks.STONE_MINERALS_PURPLE + "Stairs", stoneMineralsPurple, 0);
 
@@ -625,3 +628,4 @@ public class ModBlocks {
         GameRegistry.registerBlock(log_sprucePanel, Names.Panels.LOG_SPRUCE_PANEL);
     }
 }
+*/

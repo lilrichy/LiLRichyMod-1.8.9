@@ -1,12 +1,15 @@
+/*
 package com.blogspot.richardreigens.lilrichymod.blocks.crops;
 
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import net.minecraft.item.Item;
 
+*/
 /**
  * Created by Rich on 12/2/2015.
- */
+ *//*
+
 public class BeardedAzalea extends LiLRichyCrop {
     public BeardedAzalea(String name) {
         super(name);
@@ -25,7 +28,8 @@ public class BeardedAzalea extends LiLRichyCrop {
      return ModItems.essanceOfBeared;
     }
 
-   /* @Override
+   */
+/* @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
         iIcon = new IIcon[maxGrowthStage + 1];
@@ -45,7 +49,8 @@ public class BeardedAzalea extends LiLRichyCrop {
     public String getItemIconName() {
         return String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName()));
     }
-*/
+*//*
+
     @Override
     public String getUnlocalizedName() {
         return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":crops/", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
@@ -54,4 +59,4 @@ public class BeardedAzalea extends LiLRichyCrop {
     protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
-}
+}*/

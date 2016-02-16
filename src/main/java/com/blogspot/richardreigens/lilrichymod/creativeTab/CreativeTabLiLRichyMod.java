@@ -1,6 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.creativeTab;
 
-import com.blogspot.richardreigens.lilrichymod.init.DecorativeBlockInit;
+import com.blogspot.richardreigens.lilrichymod.init.DecoBlocks;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.relauncher.Side;
@@ -16,7 +16,7 @@ public class CreativeTabLiLRichyMod {
         @SideOnly(Side.CLIENT)
         @Override
         public Item getTabIconItem() {
-            return Item.getItemFromBlock(DecorativeBlockInit.concrete_block);
+            return Item.getItemFromBlock(DecoBlocks.concrete_block);
         }
     };
     //Todo Item not rendered in creative tab

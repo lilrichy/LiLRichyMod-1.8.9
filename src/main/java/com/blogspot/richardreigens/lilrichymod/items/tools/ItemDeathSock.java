@@ -1,10 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod.items.tools;
 
 import com.blogspot.richardreigens.lilrichymod.items.ItemLiLRichyMod;
-import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -12,6 +9,8 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.List;
 
@@ -23,9 +22,9 @@ public class ItemDeathSock extends ItemLiLRichyMod {
     public boolean activated = false;
     public int chargeTime = 0;
 
-    public ItemDeathSock() {
-        super();
-        this.setUnlocalizedName(Names.Items.DEATH_SOCK);
+    public ItemDeathSock(String name) {
+        super(name);
+        this.setUnlocalizedName(name);
         this.maxStackSize = 1;
     }
     //ToDo Rendering of blocks, item, block states, and models

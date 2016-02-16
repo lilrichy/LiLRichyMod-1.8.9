@@ -1,7 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.recipes;
 
-import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
-import com.blogspot.richardreigens.lilrichymod.init.ModBlocksGlass;
+import com.blogspot.richardreigens.lilrichymod.init.DecoBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import net.minecraft.init.Blocks;
@@ -20,55 +19,20 @@ import java.util.List;
 //Todo Switch to varianents = block states
 public class BlockTableRecipes {
     private static final BlockTableRecipes recipes = new BlockTableRecipes();
-    private HashMap<List<Integer>, ItemStack[]> result = new HashMap<List<Integer>, ItemStack[]>();
+    private HashMap<List<Integer>, ItemStack> result = new HashMap<List<Integer>, ItemStack>();
 
     public BlockTableRecipes() {
-        // Output Lists "also add to isCraftableBlock": these lists are what is displayed in the output
-        //slots of the Block Table.
-        ItemStack[] concreteList = {new ItemStack(ModBlocks.concreteBricks),
-                new ItemStack(ModBlocks.concreteRocks), new ItemStack(ModBlocks.concreteTexturedBlocks),
-                new ItemStack(ModBlocks.concreteSquares), new ItemStack(ModBlocks.concreteBricksDark),
-                new ItemStack(ModBlocks.arrangedConcreteBricks), new ItemStack(ModBlocks.fancyConcreteBlocks),
-                new ItemStack(ModBlocks.oldConcreteSquares), new ItemStack(ModBlocks.smallConcreteBricks),
-                new ItemStack(ModBlocks.smallConcreteTexturedSquares)};
+        /**
+         * Recipe Lists: (output, slot 1 input, slot 2 input) this is the Main recipes for the Block table
+         *Ore Dictionary Recipes - Allow blocks to convert between similar types.
+         */
+        this.addRecipe(new ItemStack(DecoBlocks.deco_concrete), new ItemStack(DecoBlocks.concrete_block), new ItemStack(ModItems.crushedConcrete));
+        for (ItemStack aConcrete : OreDictionary.getOres(Names.OreDicNames.CONCRETE))
+            this.addRecipe(new ItemStack(DecoBlocks.deco_concrete), new ItemStack(aConcrete.getItem()), new ItemStack(ModItems.crushedConcrete));
 
-        ItemStack[] metalsList = {new ItemStack(ModBlocks.metalStained),
-                new ItemStack(ModBlocks.metalSeafoamTarnish), new ItemStack(ModBlocks.metalBubbleGrip),
-                new ItemStack(ModBlocks.metalBatteredRobot), new ItemStack(ModBlocks.metalRustedIronGrip),
-                new ItemStack(ModBlocks.metalNeedlepointSteel)};
 
-        ItemStack[] metalRobotListColor = {new ItemStack(ModBlocks.metalBatteredRobotBlue),
-                new ItemStack(ModBlocks.metalBatteredRobotOrange), new ItemStack(ModBlocks.metalBatteredRobotPurple)};
-
-        ItemStack[] marbleList = {new ItemStack(ModBlocks.marbleBlancoNafin), new ItemStack(ModBlocks.marbleSpottedBianco),
-                new ItemStack(ModBlocks.marbleBlancoAurora), new ItemStack(ModBlocks.marbleBlack)};
-
-        ItemStack[] cottageList = {new ItemStack(ModBlocks.cottageWall), new ItemStack(ModBlocks.cottageWallDark),
-                new ItemStack(ModBlocks.cottageWallArchedBeam), new ItemStack(ModBlocks.cottageWallArchedBeamDark),
-                new ItemStack(ModBlocks.cottageWallPanelLight), new ItemStack(ModBlocks.cottageWallPanelDark),
-                new ItemStack(ModBlocks.cottageWallXLight), new ItemStack(ModBlocks.cottageWallXDark),
-                new ItemStack(ModBlocks.cottageWindowLight), new ItemStack(ModBlocks.cottageWindowDark)};
-
-        ItemStack[] lavaList = {new ItemStack(ModBlocks.lavaBowl), new ItemStack(ModBlocks.lavaCracks),
-                new ItemStack(ModBlocks.lavaDeepFire), new ItemStack(ModBlocks.lavaPelesLake),
-                new ItemStack(ModBlocks.lavaSearingGorge), new ItemStack(ModBlocks.lavaVolcano)};
-
-        ItemStack[] lavaBowlListColor = {new ItemStack(ModBlocks.lavaBowlBlue), new ItemStack(ModBlocks.lavaBowlGreen),
-                new ItemStack(ModBlocks.lavaBowlPurple)};
-
-        ItemStack[] stoneList = {new ItemStack(ModBlocks.arrangedStoneBricks), new ItemStack(ModBlocks.crackedStone),
-                new ItemStack(ModBlocks.stoneBlocks), new ItemStack(ModBlocks.stoneMinerals), new ItemStack(ModBlocks.darkStoneBlocks)};
-
-        ItemStack[] stoneMineralsListColors = {new ItemStack(ModBlocks.stoneMineralsBlue), new ItemStack(ModBlocks.stoneMineralsOrange),
-                new ItemStack(ModBlocks.stoneMineralsPurple)};
-
-        ItemStack[] glassList = {new ItemStack(ModBlocksGlass.CLEAR_GLASS_BLUE), new ItemStack(ModBlocksGlass.CLEAR_GLASS_GREEN),
-                new ItemStack(ModBlocksGlass.CLEAR_GLASS_PINK), new ItemStack(ModBlocksGlass.CLEAR_GLASS_BROWN),
-                new ItemStack(ModBlocksGlass.FROSTY_GLASS_BLUE), new ItemStack(ModBlocksGlass.FROSTY_GLASS_GREEN),
-                new ItemStack(ModBlocksGlass.FROSTY_GLASS_PURPLE)};
-
-        // Recipe Lists: (output, slot 1 input, slot 2 input) this is the Main recipes for the Block table
-        this.addRecipe(concreteList, new ItemStack(ModBlocks.concrete), new ItemStack(ModItems.crushedConcrete));
+      /**Need to update the Recipies for the following blocks when they are added back to mod*/
+        /*
         this.addRecipe(metalsList, new ItemStack(ModBlocks.concrete), new ItemStack(Items.iron_ingot));
         this.addRecipe(marbleList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.sandstone));
         this.addRecipe(lavaList, new ItemStack(ModBlocks.concrete), new ItemStack(Blocks.netherrack));
@@ -79,9 +43,7 @@ public class BlockTableRecipes {
         for (ItemStack aPlanks : OreDictionary.getOres("plankWood"))
             this.addRecipe(cottageList, new ItemStack(ModBlocks.concrete), new ItemStack(aPlanks.getItem()));
 
-        //Ore Dictionary Recipes - Allow blocks to convert between similar types.
-        for (ItemStack aConcrete : OreDictionary.getOres(Names.OreDicNames.CONCRETE))
-            this.addRecipe(concreteList, new ItemStack(aConcrete.getItem()), new ItemStack(ModItems.crushedConcrete));
+
         for (ItemStack aMetal : OreDictionary.getOres(Names.OreDicNames.METAL))
             this.addRecipe(metalsList, new ItemStack(aMetal.getItem()), new ItemStack(Items.iron_ingot));
         for (ItemStack aMarble : OreDictionary.getOres(Names.OreDicNames.MARBLE))
@@ -102,14 +64,19 @@ public class BlockTableRecipes {
         for (ItemStack aCottage : OreDictionary.getOres(Names.OreDicNames.COTTAGE)) {
             for (ItemStack aPlanks : OreDictionary.getOres("plankWood"))
                 this.addRecipe(cottageList, new ItemStack(aCottage.getItem()), new ItemStack(aPlanks.getItem()));
-        }
+        }*/
     }
 
-    //This is used to check if the block can be placed in the first slot.
+
+    /**
+     *  This is used to check if the block can be placed in the first slot.
+     * @param stack the block trying to be placed into the slot
+     * @return True if the block matches and can be placed in the slot
+     */
     public static boolean isCraftableBlock(ItemStack stack) {
         //Check if valid block
         if (stack != null) {
-            if (stack.isItemEqual(new ItemStack(ModBlocks.concrete))) return true;
+            if (stack.isItemEqual(new ItemStack(DecoBlocks.concrete_block))) return true;
 
             //Ore Dictionary usage
             for (ItemStack iStack : OreDictionary.getOres("blockGlass"))
@@ -136,11 +103,17 @@ public class BlockTableRecipes {
         return false;
     }
 
+    /**
+     * Checks if a block can be placed into the 2nd slot
+     * @param stack the block trying to be placed into the slot
+     * @return True if the block matches and can be placed in the slot
+     */
     public static boolean isMaterial(ItemStack stack) {
         //Lists of Materials that can be used in the 2nd Slot of the Block Table
         ItemStack[] materialList = {new ItemStack(ModItems.crushedConcrete), new ItemStack(Items.iron_ingot),
                 new ItemStack(Blocks.sandstone), new ItemStack(Blocks.netherrack),
-                new ItemStack(Blocks.stone), new ItemStack(ModItems.essanceOfBeared)};
+                new ItemStack(Blocks.stone)};
+        //Todo, new ItemStack(ModItems.essanceOfBeared)};
 
         for (ItemStack aMatsList : materialList) if (stack.isItemEqual(aMatsList)) return true;
 
@@ -154,17 +127,19 @@ public class BlockTableRecipes {
         return recipes;
     }
 
-    public void addRecipe(ItemStack[] output, ItemStack... inputs) {
+    public void addRecipe(ItemStack output, ItemStack... inputs) {
         List<Integer> inputData = new ArrayList<Integer>();
-        for (ItemStack stack : inputs) inputData.add(stack.getItem().getIdFromItem(stack.getItem()));
-
+        for (ItemStack stack : inputs) {
+            inputData.add(stack.getItem().getIdFromItem(stack.getItem()));
+        }
         result.put(inputData, output);
     }
 
-    public ItemStack[] getCraftingResult(ItemStack... inputs) {
+    public ItemStack getCraftingResult(ItemStack... inputs) {
         List<Integer> inputData = new ArrayList<Integer>();
-        for (ItemStack stack : inputs) inputData.add(stack.getItem().getIdFromItem(stack.getItem()));
-
+        for (ItemStack stack : inputs) {
+            inputData.add(stack.getItem().getIdFromItem(stack.getItem()));
+        }
         return result.get(inputData);
     }
 }

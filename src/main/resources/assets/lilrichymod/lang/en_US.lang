@@ -1,13 +1,13 @@
 itemGroup.lilrichymod=LiLRichy Mod
 
 #ITEMS
-item.lilrichymod:deathSock.name=Death Sock
-item.lilrichymod:concreteMix.name=Concrete Mix
-item.lilrichymod:crushedConcrete.name=Crushed Concrete
-item.lilrichymod:essenceOfBeared.name=Essence of Bearded
+item.deathSock.name=Death Sock
+item.concreteMix.name=Concrete Mix
+item.crushedConcrete.name=Crushed Concrete
+item.essenceOfBeared.name=Essence of Bearded
 
 #BLOCK TABLE
-tile.lilrichymod:blockTable.name=Block Table
+tile.blockTable.name=Block Table
 
 #Lectern
 tile.lilrichymod:lectern.name=Lectern

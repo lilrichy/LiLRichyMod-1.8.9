@@ -1,3 +1,4 @@
+/*
 package com.blogspot.richardreigens.lilrichymod.init;
 
 import com.blogspot.richardreigens.lilrichymod.blocks.LiLRichyPane;
@@ -9,9 +10,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.oredict.OreDictionary;
 
+*/
 /**
  * Created by LiLRichy on 1/26/2016.
- */
+ *//*
+
 public class ModBlocksGlass {
     //Glass Blocks
     public static final GlassBlocks CLEAR_GLASS_BLUE = new GlassBlocks(Names.Glass.CLEAR_GLASS_BLUE,
@@ -83,3 +86,4 @@ public class ModBlocksGlass {
         OreDictionary.registerOre(Names.OreDicNames.GLASS_PANE, FROSTY_GLASS_PURPLE_PANE);
     }
 }
+*/

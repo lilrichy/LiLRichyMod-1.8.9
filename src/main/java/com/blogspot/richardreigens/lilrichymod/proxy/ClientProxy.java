@@ -1,16 +1,12 @@
 package com.blogspot.richardreigens.lilrichymod.proxy;
 
-import com.blogspot.richardreigens.lilrichymod.blocks.blockTable.RenderBlockTable;
-import com.blogspot.richardreigens.lilrichymod.blocks.blockTable.TileEntityBlockTable;
-import com.blogspot.richardreigens.lilrichymod.blocks.lectern.LecternRender;
-import com.blogspot.richardreigens.lilrichymod.blocks.lectern.TileEntityLectern;
 import com.blogspot.richardreigens.lilrichymod.handler.EventHandler;
-import com.blogspot.richardreigens.lilrichymod.init.DecorativeBlockInit;
+import com.blogspot.richardreigens.lilrichymod.init.DecoBlocks;
+import com.blogspot.richardreigens.lilrichymod.init.ModItems;
+import com.blogspot.richardreigens.lilrichymod.init.ModTileEntity;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -23,14 +19,20 @@ public class ClientProxy extends CommonProxy {
     public void registerRenderers() {
 
         //Block Item Renderer
-        DecorativeBlockInit.registerRenders();
+        DecoBlocks.registerRenders();
+        //Tile Entity Renderer
+        ModTileEntity.registerRenders();
 
-        TileEntitySpecialRenderer render = new RenderBlockTable();
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockTable.class, render);
+        //Item Renderer
+        ModItems.registerRenders();
+
+
+       // TileEntitySpecialRenderer render = new RenderBlockTable();
+    //    ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlockTable.class, render);
        // MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModTileEntity.blockTable), new ItemRenderBlockTable(render, new TileEntityBlockTable()));
 
-        TileEntitySpecialRenderer renderLectern = new LecternRender();
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityLectern.class, renderLectern);
+//        TileEntitySpecialRenderer renderLectern = new LecternRender();
+//        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityLectern.class, renderLectern);
      //   MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModTileEntity.lectern), new ItemRenderLectern(renderLectern, new TileEntityLectern()));
     }
 
