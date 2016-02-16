@@ -83,7 +83,6 @@ public class DecoBlockVarStrings {
     };
 
     public static String[] stoneMineralsTypes = {
-
             "stoneMineralsBlue",
             "stoneMineralsOrange",
             "stoneMineralsPurple"

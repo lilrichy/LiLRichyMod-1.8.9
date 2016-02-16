@@ -1,0 +1,15 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "minecraft:cube_all",
+        "transform": "forge:default-block"
+    },
+    "variants": {
+        "type": {
+            "decovar0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/marbleBlack" } },
+            "decovar1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/marbleBlancoAurora" } },
+            "decovar2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/marbleBlancoNafin" } },
+            "decovar3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/marbleSpottedBianco" } }
+        }
+    }
+}
