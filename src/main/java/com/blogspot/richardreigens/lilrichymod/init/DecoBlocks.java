@@ -28,20 +28,24 @@ public class DecoBlocks {
     public static Block deco_concrete = new DecoSubBlocks("DecoConcrete", Material.rock,
             Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS, DecoBlockVarStrings.concreteTypes);
     //Cottage
-
+    public static Block deco_cottage = new DecoSubBlocks("DecoCottage", Material.wood,
+            Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS, DecoBlockVarStrings.cottageTypes);
 
     //Lava
-
+    public static Block deco_lava = new DecoSubBlocks("DecoLava", Material.rock,
+            Reference.CRAFT_WITH + Reference.LAVA_BLOCKS, DecoBlockVarStrings.lavaTypes);
 
     //Marble
-
+    public static Block deco_marble = new DecoSubBlocks("DecoMarble", Material.rock,
+            Reference.CRAFT_WITH + Reference.MARBLE_BLOCKS, DecoBlockVarStrings.marbleTypes);
 
     //Metal
     public static Block deco_metal = new DecoSubBlocks("DecoMetal", Material.iron,
             Reference.CRAFT_WITH + Reference.METAL_BLOCKS, DecoBlockVarStrings.metalTypes);
 
     //Stone
-
+    public static Block deco_stone = new DecoSubBlocks("DecoStone", Material.rock,
+            Reference.CRAFT_WITH + Reference.STONE_BLOCKS, DecoBlockVarStrings.stoneTypes);
 
     /**
      * Initial Registry
@@ -49,6 +53,7 @@ public class DecoBlocks {
      * if block has sub blocks then use registerOreDicMeta toregister to Ore Dictionary
      * Decorative blocks should also register Ore Dictionary - SmeltToConcrete to allow them to be
      * smelted back into concrete blocks.
+     * Color Versions of Blocks should also Ore Dictionary there main version.
      */
     public static void register() {
 
@@ -61,10 +66,19 @@ public class DecoBlocks {
         registerOreDicMeta(deco_concrete, Names.OreDicNames.SMELT_TO_CONCRETE);
 
         //Cottage
+        GameRegistry.registerBlock(deco_cottage, ItemBlockMeta.class, "DecoCottage");
+        registerOreDicMeta(deco_cottage, Names.OreDicNames.COTTAGE);
+        registerOreDicMeta(deco_cottage, Names.OreDicNames.SMELT_TO_CONCRETE);
 
         //Lava
+        GameRegistry.registerBlock(deco_lava, ItemBlockMeta.class, "DecoLava");
+        registerOreDicMeta(deco_lava, Names.OreDicNames.LAVA);
+        registerOreDicMeta(deco_lava, Names.OreDicNames.SMELT_TO_CONCRETE);
 
         //Marble
+        GameRegistry.registerBlock(deco_marble, ItemBlockMeta.class, "DecoMarble");
+        registerOreDicMeta(deco_marble, Names.OreDicNames.MARBLE);
+        registerOreDicMeta(deco_marble, Names.OreDicNames.SMELT_TO_CONCRETE);
 
         //Metal
         GameRegistry.registerBlock(deco_metal, ItemBlockMeta.class, "DecoMetal");
@@ -72,6 +86,9 @@ public class DecoBlocks {
         registerOreDicMeta(deco_metal, Names.OreDicNames.SMELT_TO_CONCRETE);
 
         //Stone
+        GameRegistry.registerBlock(deco_stone, ItemBlockMeta.class, "DecoStone");
+        registerOreDicMeta(deco_stone, Names.OreDicNames.STONE);
+        registerOreDicMeta(deco_stone, Names.OreDicNames.SMELT_TO_CONCRETE);
     }
 
     /**

@@ -80,6 +80,10 @@ public class DecoBlockVarStrings {
             "stoneBlocksDark",
             "stoneCracked",
             "stoneMinerals",
+    };
+
+    public static String[] stoneMineralsTypes = {
+
             "stoneMineralsBlue",
             "stoneMineralsOrange",
             "stoneMineralsPurple"
