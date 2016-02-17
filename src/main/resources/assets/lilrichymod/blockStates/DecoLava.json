@@ -6,12 +6,12 @@
     },
     "variants": {
         "type": {
-            "decovar0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaBowl" } },
-            "decovar1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaCracks" } },
-            "decovar2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaDeepFire" } },
-            "decovar3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaPelesLake" } },
-            "decovar4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaSearingGorge" } },
-            "decovar5": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaSlumberingVolcano" } }
+            "0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaBowl" } },
+            "1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaCracks" } },
+            "2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaDeepFire" } },
+            "3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaPelesLake" } },
+            "4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaSearingGorge" } },
+            "5": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaSlumberingVolcano" } }
         }
     }
 }

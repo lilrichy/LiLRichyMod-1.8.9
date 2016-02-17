@@ -32,36 +32,36 @@ public class DecoBlocks {
     public static Block concrete_block = new BlockConcrete(Names.Blocks.CONCRETE, Material.rock);
 
     public static Block deco_concrete = new DecoSubBlocks("DecoConcrete", Material.rock,
-            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.CONCRETE_BLOCKS, DecoBlockVarStrings.concreteTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.CONCRETE_BLOCKS, DecoBlockVarStrings.concreteTypes, DecoBlockVarStrings.concreteTypes.length);
     //Cottage
     public static Block deco_cottage = new DecoSubBlocks("DecoCottage", Material.wood,
-            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.COTTAGE_BLOCKS, DecoBlockVarStrings.cottageTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.COTTAGE_BLOCKS, DecoBlockVarStrings.cottageTypes, DecoBlockVarStrings.cottageTypes.length);
 
     //Lava
     public static Block deco_lava = new DecoSubBlocks("DecoLava", Material.rock,
-            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.LAVA_BLOCKS, DecoBlockVarStrings.lavaTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.LAVA_BLOCKS, DecoBlockVarStrings.lavaTypes, DecoBlockVarStrings.lavaTypes.length);
     public static Block deco_lavaBowlColors = new DecoSubBlocks("DecoLavaBowlColors", Material.rock,
-            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.LAVA_BOWL_COLORS, DecoBlockVarStrings.lavaBowlTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.LAVA_BOWL_COLORS, DecoBlockVarStrings.lavaBowlTypes, DecoBlockVarStrings.lavaBowlTypes.length);
 
     //Marble
     public static Block deco_marble = new DecoSubBlocks("DecoMarble", Material.rock,
-            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.MARBLE_BLOCKS, DecoBlockVarStrings.marbleTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.MARBLE_BLOCKS, DecoBlockVarStrings.marbleTypes, DecoBlockVarStrings.marbleTypes.length);
 
     //Metal
     public static Block deco_metal = new DecoSubBlocks("DecoMetal", Material.iron,
-            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.METAL_BLOCKS, DecoBlockVarStrings.metalTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.METAL_BLOCKS, DecoBlockVarStrings.metalTypes, DecoBlockVarStrings.metalTypes.length);
     public static Block deco_metalRobotColors = new DecoSubBlocks("DecoMetalRobotColors", Material.iron,
-            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.METAL_ROBOT_COLORS, DecoBlockVarStrings.metalRobotTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.METAL_ROBOT_COLORS, DecoBlockVarStrings.metalRobotTypes, DecoBlockVarStrings.metalRobotTypes.length);
 
     //Stone
     public static Block deco_stone = new DecoSubBlocks("DecoStone", Material.rock,
-            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.STONE_BLOCKS, DecoBlockVarStrings.stoneTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.STONE_BLOCKS, DecoBlockVarStrings.stoneTypes, DecoBlockVarStrings.stoneTypes.length);
     public static Block deco_stoneMineralsColors = new DecoSubBlocks("DecoStoneMineralsColors", Material.rock,
-            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.STONE_MINERALS_COLORS_CRAFT, DecoBlockVarStrings.stoneMineralsTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.STONE_MINERALS_COLORS_CRAFT, DecoBlockVarStrings.stoneMineralsTypes, DecoBlockVarStrings.stoneMineralsTypes.length);
 
     //Glass
     public static Block deco_ClearGlass = new GlassBlocks("DecoClearGlass", Material.glass,
-            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.GLASS_CLEAR, DecoBlockVarStrings.clearGlassTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.GLASS_CLEAR, DecoBlockVarStrings.clearGlassTypes, DecoBlockVarStrings.clearGlassTypes.length);
 
     /**
      * Initial Registry
@@ -187,7 +187,7 @@ public class DecoBlocks {
     public static void registerRender(Block block, int meta) {
         Item item = Item.getItemFromBlock(block);
         ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(
-                Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "type=decovar" + meta));
+                Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "type="+meta));
     }
 
     /**

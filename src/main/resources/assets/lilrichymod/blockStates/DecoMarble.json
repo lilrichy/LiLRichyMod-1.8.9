@@ -6,10 +6,10 @@
     },
     "variants": {
         "type": {
-            "decovar0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/marbleBlack" } },
-            "decovar1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/marbleBlancoAurora" } },
-            "decovar2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/marbleBlancoNafin" } },
-            "decovar3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/marbleSpottedBianco" } }
+            "0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/marbleBlack" } },
+            "1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/marbleBlancoAurora" } },
+            "2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/marbleBlancoNafin" } },
+            "3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/marbleSpottedBianco" } }
         }
     }
 }

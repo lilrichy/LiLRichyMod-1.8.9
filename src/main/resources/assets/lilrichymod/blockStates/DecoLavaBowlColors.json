@@ -6,9 +6,9 @@
     },
     "variants": {
         "type": {
-            "decovar0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaBowlBlue" } },
-            "decovar1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaBowlGreen" } },
-            "decovar2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaBowlPurple" } }
+            "0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaBowlBlue" } },
+            "1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaBowlGreen" } },
+            "2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/lavaBowlPurple" } }
         }
     }
 }

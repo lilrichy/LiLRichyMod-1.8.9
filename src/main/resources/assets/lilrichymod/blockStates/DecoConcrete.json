@@ -6,16 +6,16 @@
     },
     "variants": {
         "type": {
-            "decovar0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteArrangedBricks" } },
-            "decovar1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteBricks" } },
-            "decovar2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteBricksDark" } },
-            "decovar3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteFancyBlocks" } },
-            "decovar4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteOldSquares" } },
-            "decovar5": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteRocks" } },
-            "decovar6": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteSmallBricks" } },
-            "decovar7": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteSmallTexturedSquares" } },
-            "decovar8": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteSquares" } },
-            "decovar9": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteTexturedBlocks" } }
+            "0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteArrangedBricks" } },
+            "1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteBricks" } },
+            "2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteBricksDark" } },
+            "3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteFancyBlocks" } },
+            "4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteOldSquares" } },
+            "5": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteRocks" } },
+            "6": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteSmallBricks" } },
+            "7": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteSmallTexturedSquares" } },
+            "8": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteSquares" } },
+            "9": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/concreteTexturedBlocks" } }
         }
     }
 }

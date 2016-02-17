@@ -6,21 +6,21 @@
     },
     "variants": {
         "type": {
-            "decovar0": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassBlack" } },
-            "decovar1": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassBlue" } },
-            "decovar2": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassBrown" } },
-            "decovar3": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassCyan" } },
-            "decovar4": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassGray" } },
-            "decovar5": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassGreen" } },
-            "decovar6": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassLightBlue" } },
-            "decovar7": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassLime" } },
-            "decovar8": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassMagenta" } },
-            "decovar9": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassOrange" } },
-            "decovar10": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassPink" } },
-            "decovar11": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassPurple" } },
-            "decovar12": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassRed" } },
-            "decovar13": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassSilver" } },
-            "decovar14": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassYellow" } }
+            "0": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassBlack" } },
+            "1": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassBlue" } },
+            "2": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassBrown" } },
+            "3": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassCyan" } },
+            "4": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassGray" } },
+            "5": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassGreen" } },
+            "6": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassLightBlue" } },
+            "7": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassLime" } },
+            "8": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassMagenta" } },
+            "9": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassOrange" } },
+            "10": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassPink" } },
+            "11": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassPurple" } },
+            "12": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassRed" } },
+            "13": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassSilver" } },
+            "14": { "textures": {  "all": "lilrichymod:blocks/glass/clear/clearGlassYellow" } }
         }
     }
 }

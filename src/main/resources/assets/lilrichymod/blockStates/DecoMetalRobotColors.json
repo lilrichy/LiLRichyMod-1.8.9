@@ -6,9 +6,9 @@
     },
     "variants": {
         "type": {
-            "decovar0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBatteredRobotBlue" } },
-            "decovar1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBatteredRobotOrange" } },
-            "decovar2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBatteredRobotPurple" } }
+            "0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBatteredRobotBlue" } },
+            "1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBatteredRobotOrange" } },
+            "2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBatteredRobotPurple" } }
         }
     }
 }

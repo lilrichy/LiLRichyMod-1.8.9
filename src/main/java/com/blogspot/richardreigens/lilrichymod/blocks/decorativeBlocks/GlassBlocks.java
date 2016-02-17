@@ -13,8 +13,8 @@ import net.minecraft.world.IBlockAccess;
  */
 public class GlassBlocks extends DecoSubBlocks {
     //Constructor with Tool tip
-    public GlassBlocks(String name, Material material, String toolTip, String toolTip2, String[] types) {
-        super(name, material, toolTip, toolTip2, types);
+    public GlassBlocks(String name, Material material, String toolTip, String toolTip2, String[] types, int typesLength) {
+        super(name, material, toolTip, toolTip2, types, typesLength);
         this.setHardness(0.5f);
         this.setLightLevel(1.0F);
         this.setStepSound(soundTypeGlass);

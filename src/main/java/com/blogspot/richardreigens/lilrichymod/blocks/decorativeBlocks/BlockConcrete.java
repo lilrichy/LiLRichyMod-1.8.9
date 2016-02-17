@@ -24,7 +24,7 @@ public class BlockConcrete extends DecorativeBlocks {
 
     //Overrides to drop different item then block
     @Override
-    public int quantityDropped(Random p_149745_1_) {
+    public int quantityDropped(Random rand) {
         return 4;
     }
 

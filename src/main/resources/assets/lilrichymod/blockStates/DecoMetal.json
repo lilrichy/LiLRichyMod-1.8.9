@@ -6,18 +6,18 @@
     },
     "variants": {
         "type": {
-            "decovar0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalArmor" } },
-            "decovar1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBatteredRobot" } },
-            "decovar2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBrushedSteel" } },
-            "decovar3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBrushedSteelDark" } },
-            "decovar4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBubbleGrip" } },
-            "decovar5": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalLaserEtched" } },
-            "decovar6": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalNeedlepointSteel" } },
-            "decovar7": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalPlating" } },
-            "decovar8": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalPlatingDark" } },
-            "decovar9": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalRustedIronGrip" } },
-            "decovar10": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalSeafoamTarnish" } },
-            "decovar11": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalStained" } }
+            "0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalArmor" } },
+            "1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBatteredRobot" } },
+            "2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBrushedSteel" } },
+            "3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBrushedSteelDark" } },
+            "4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalBubbleGrip" } },
+            "5": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalLaserEtched" } },
+            "6": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalNeedlepointSteel" } },
+            "7": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalPlating" } },
+            "8": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalPlatingDark" } },
+            "9": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalRustedIronGrip" } },
+            "10": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalSeafoamTarnish" } },
+            "11": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/metalStained" } }
         }
     }
 }

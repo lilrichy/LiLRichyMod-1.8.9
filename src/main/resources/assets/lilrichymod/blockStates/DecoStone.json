@@ -6,11 +6,11 @@
     },
     "variants": {
         "type": {
-            "decovar0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/stonearrangedBricks" } },
-            "decovar1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/stoneBlocks" } },
-            "decovar2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/stoneBlocksDark" } },
-            "decovar3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/stoneCracked" } },
-            "decovar4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/stoneMinerals" } }
+            "0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/stonearrangedBricks" } },
+            "1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/stoneBlocks" } },
+            "2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/stoneBlocksDark" } },
+            "3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/stoneCracked" } },
+            "4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/stoneMinerals" } }
         }
     }
 }

@@ -6,16 +6,16 @@
     },
     "variants": {
         "type": {
-            "decovar0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWall" } },
-            "decovar1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallArchedBeam" } },
-            "decovar2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallArchedBeamDark" } },
-            "decovar3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallDark" } },
-            "decovar4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallPanelDark" } },
-            "decovar5": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallPanelLight" } },
-            "decovar6": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallXDark" } },
-            "decovar7": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallXLight" } },
-            "decovar8": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWindowDark" } },
-            "decovar9": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWindowLight" } }
+            "0": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWall" } },
+            "1": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallArchedBeam" } },
+            "2": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallArchedBeamDark" } },
+            "3": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallDark" } },
+            "4": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallPanelDark" } },
+            "5": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallPanelLight" } },
+            "6": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallXDark" } },
+            "7": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWallXLight" } },
+            "8": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWindowDark" } },
+            "9": { "textures": {  "all": "lilrichymod:blocks/decorativeBlocks/cottageWindowLight" } }
         }
     }
 }
