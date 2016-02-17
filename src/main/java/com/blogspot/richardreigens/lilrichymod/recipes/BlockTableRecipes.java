@@ -69,14 +69,13 @@ public class BlockTableRecipes {
         for (ItemStack aCottage : OreDictionary.getOres(Names.OreDicNames.COTTAGE)) {
             for (ItemStack aPlanks : OreDictionary.getOres("plankWood"))
                 this.addRecipe(new ItemStack(DecoBlocks.deco_cottage), new ItemStack(aCottage.getItem()), new ItemStack(aPlanks.getItem()));
-
-
-            //TODO Need to update the Recipies for the following blocks when they are added back to mod
-            /*
-                for (ItemStack aGlass : OreDictionary.getOres("blockGlass"))
-                    this.addRecipe(glassList, new ItemStack(aGlass.getItem()), new ItemStack(ModItems.essanceOfBeared));
-             */
         }
+
+        for (ItemStack aGlass : OreDictionary.getOres("blockGlass"))
+            this.addRecipe(new ItemStack(DecoBlocks.deco_ClearGlass), new ItemStack(aGlass.getItem()), new ItemStack(ModItems.essanceOfBeared));
+
+
+
     }
 
 

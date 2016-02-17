@@ -12,7 +12,7 @@ public class Names {
     public static class OreDicNames {
         public static final String CONCRETE = "blockLilrichyConcrete";
         public static final String SMELT_TO_CONCRETE = "lilrichySmeltable";
-        public static final String GLASS = "blockLilrichyGlass";
+        public static final String GLASS_CLEAR = "blockLilrichyClearGlass";
         public static final String LAVA = "blockLilrichyLava";
         public static final String LAVA_BOWL = "blockLilrichyLavaBowl";
         public static final String METAL = "blockLilrichyMetal";
@@ -36,7 +36,7 @@ public class Names {
         public static final String CONCRETE_BLOCKS = "Concrete and Crushed Concrete";
         public static final String LAVA_BOWL_COLORS = "Lava Bowl and Essence Of Bearded";
         public static final String METAL_ROBOT_COLORS = "Metal Battered Robot and Essence Of Bearded";
-        public static final String GLASS_COLORS = "Glass and Essence Of Bearded";
+        public static final String GLASS_CLEAR = "Glass and Essence Of Bearded";
         public static final String STONE_MINERALS_COLORS_CRAFT = "Stone Minerals and Essence of Bearded";
     }
 
@@ -61,8 +61,6 @@ public class Names {
 
         public static final String FROSTY_GLASS_PURPLE = "frostyGlassPurple";
         public static final String FROSTY_GLASS_PURPLE_PANE = "frostyGlassPurplePane";
-
-
     }
 
     public static class Blocks {

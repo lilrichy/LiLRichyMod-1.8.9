@@ -5,6 +5,7 @@ import com.blogspot.richardreigens.lilrichymod.blocks.crops.CropItemBlock;
 import com.blogspot.richardreigens.lilrichymod.blocks.crops.LiLRichyCrop;
 import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.BlockConcrete;
 import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.DecoSubBlocks;
+import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.GlassBlocks;
 import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.ItemBlockMeta;
 import com.blogspot.richardreigens.lilrichymod.reference.DecoBlockVarStrings;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
@@ -57,6 +58,10 @@ public class DecoBlocks {
             Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.STONE_BLOCKS, DecoBlockVarStrings.stoneTypes);
     public static Block deco_stoneMineralsColors = new DecoSubBlocks("DecoStoneMineralsColors", Material.rock,
             Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.STONE_MINERALS_COLORS_CRAFT, DecoBlockVarStrings.stoneMineralsTypes);
+
+    //Glass
+    public static Block deco_ClearGlass = new GlassBlocks("DecoClearGlass", Material.glass,
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.GLASS_CLEAR, DecoBlockVarStrings.clearGlassTypes);
 
     /**
      * Initial Registry
@@ -114,6 +119,11 @@ public class DecoBlocks {
         registerOreDicMeta(deco_stoneMineralsColors, Names.OreDicNames.STONE_MINERALS);
         registerOreDicMeta(deco_stoneMineralsColors, Names.OreDicNames.STONE);
         registerOreDicMeta(deco_stoneMineralsColors, Names.OreDicNames.SMELT_TO_CONCRETE);
+
+        //Glass
+        GameRegistry.registerBlock(deco_ClearGlass, ItemBlockMeta.class, "DecoClearGlass");
+        registerOreDicMeta(deco_ClearGlass, Names.OreDicNames.GLASS_CLEAR);
+        registerOreDicMeta(deco_ClearGlass, "blockGlass");
     }
 
     /**
@@ -146,6 +156,9 @@ public class DecoBlocks {
         for (int i = 0; i < DecoBlockVarStrings.stoneTypes.length; i++) registerRender(deco_stone, i);
         for (int i = 0; i < DecoBlockVarStrings.stoneMineralsTypes.length; i++)
             registerRender(deco_stoneMineralsColors, i);
+
+        //Glass
+        for (int i = 0; i < DecoBlockVarStrings.clearGlassTypes.length; i++) registerRender(deco_ClearGlass, i);
     }
 
     /**

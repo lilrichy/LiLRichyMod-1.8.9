@@ -165,15 +165,27 @@ gui.lilrichymod.AdvancedDetector.button.regular=Regular
 tile.beardedAzalea.name=Bearded Azalea
 item.beardedAzaleaSeed.name=Bearded Azalea Seeds
 
-#GLASS
-tile.lilrichymod:glass/clearGlassBlue.name=Clear Blue Glass
-tile.lilrichymod:glass/clearGlassGreen.name=Clear Green Glass
-tile.lilrichymod:glass/clearGlassPink.name=Clear Pink Glass
-tile.lilrichymod:glass/frostyGlassBrown.name=Frosty Brown Glass
+#CLEAR GLASS
+tile.DecoClearGlass.clearGlassBlack.name=Clear Black Glass
+tile.DecoClearGlass.clearGlassBlue.name=Clear Blue Glass
+tile.DecoClearGlass.clearGlassBrown.name=Clear Brown Glass
+tile.DecoClearGlass.clearGlassCyan.name=Clear Cyan Glass
+tile.DecoClearGlass.clearGlassGray.name=Clear Gray Glass
+tile.DecoClearGlass.clearGlassGreen.name=Clear Green Glass
+tile.DecoClearGlass.clearGlassLightBlue.name=Clear Light Blue Glass
+tile.DecoClearGlass.clearGlassLime.name=Clear Lime Glass
+tile.DecoClearGlass.clearGlassMagenta.name=Clear Magenta Glass
+tile.DecoClearGlass.clearGlassOrange.name=Clear Orange Glass
+tile.DecoClearGlass.clearGlassPink.name=Clear Pink Glass
+tile.DecoClearGlass.clearGlassPurple.name=Clear Purple Glass
+tile.DecoClearGlass.clearGlassRed.name=Clear Red Glass
+tile.DecoClearGlass.clearGlassSilver.name=Clear Silver Glass
+tile.DecoClearGlass.clearGlassYellow.name=Clear Yellow Glass
 
-tile.lilrichymod:glass/frostyGlassBlue.name=Frosty Blue Glass
-tile.lilrichymod:glass/frostyGlassGreen.name=Frosty Green Glass
-tile.lilrichymod:glass/frostyGlassPurple.name=Frosty Purple Glass
+#FROSTY GLASS
+tile.DecoGlass.frostyGlassBlue.name=Frosty Blue Glass
+tile.DecoGlass.frostyGlassGreen.name=Frosty Green Glass
+tile.DecoGlass.frostyGlassPurple.name=Frosty Purple Glass
 
 #Glass Panes
 tile.lilrichymod:glass/clearGlassBluePane.name=Clear Blue Glass Pane

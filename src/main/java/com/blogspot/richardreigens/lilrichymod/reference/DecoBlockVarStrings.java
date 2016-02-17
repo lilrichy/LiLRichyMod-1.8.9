@@ -31,6 +31,40 @@ public class DecoBlockVarStrings {
             "cottageWindowLight"
     };
 
+    public static String[] clearGlassTypes = {
+            "clearGlassBlack",
+            "clearGlassBlue",
+            "clearGlassBrown",
+            "clearGlassCyan",
+            "clearGlassGray",
+            "clearGlassGreen",
+            "clearGlassLightBlue",
+            "clearGlassLime",
+            "clearGlassMagenta",
+            "clearGlassOrange",
+            "clearGlassPink",
+            "clearGlassPurple",
+            "clearGlassRed",
+            "clearGlassSilver",
+            "clearGlassYellow",
+    };
+
+    public static String[] frostyGlassTypes = {
+            "frostyGlassBlue",
+            "frostyGlassGreen",
+            "frostyGlassPurple"
+    };
+
+    public static String[] glassPaneTypes = {
+            "clearGlassBluePane",
+            "clearGlassBrownPane",
+            "clearGlassGreenPane",
+            "clearGlassPinkPane",
+            "frostyGlassBluePane",
+            "frostyGlassGreenPane",
+            "frostyGlassPurplePane"
+    };
+
     public static String[] lavaTypes = {
             "lavaBowl",
             "lavaCracks",
@@ -68,7 +102,7 @@ public class DecoBlockVarStrings {
             "metalStained"
     };
 
-    public static String[] metalRobotTypes ={
+    public static String[] metalRobotTypes = {
             "metalBatteredRobotBlue",
             "metalBatteredRobotOrange",
             "metalBatteredRobotPurple"

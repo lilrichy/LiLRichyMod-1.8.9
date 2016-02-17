@@ -38,9 +38,9 @@ public class ItemBlockMeta extends ItemBlock {
         if (block != null && DecorativeBlocks.getToolTip(block) != null) list.add(DecorativeBlocks.getToolTip(block));
         if (block != null && DecorativeBlocks.getToolTip2(block) != null) list.add(DecorativeBlocks.getToolTip2(block));
         // Glass Blocks
-        if (block != null && GlassBlocks.getToolTip(block) != null) list.add(GlassBlocks.getToolTip(block));
+       /* if (block != null && GlassBlocks.getToolTip(block) != null) list.add(GlassBlocks.getToolTip(block));
         if (block != null && GlassBlocks.getCraftTip(block) != null) list.add(GlassBlocks.getCraftTip(block));
-
+*/
         //Set to use for debugging - will show OreDictionary values in tool tips.
         if (ConfigurationHandler.debugMessages) {
             int[] l = OreDictionary.getOreIDs(stack);

@@ -142,7 +142,7 @@ public class DecoSubBlocks extends DecorativeBlocks implements IMetaBlockName {
         EnumDecoType stateValue = (EnumDecoType) state.getValue(TYPE);
         int type = stateValue.getID();
         if (type != 0 && type < types.length)
-            return type - 1;
+            return type ;
         else
             return 0;
     }
