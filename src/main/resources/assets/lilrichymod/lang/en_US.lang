@@ -162,8 +162,8 @@ gui.lilrichymod.AdvancedDetector.button.invert=Inverted
 gui.lilrichymod.AdvancedDetector.button.regular=Regular
 
 #CROPS
-tile.lilrichymod:crops/beardedAzalea.name=Bearded Azalea
-item.lilrichymod:seeds/beardedAzaleaSeed.name=Bearded Azalea Seeds
+tile.beardedAzalea.name=Bearded Azalea
+item.beardedAzaleaSeed.name=Bearded Azalea Seeds
 
 #GLASS
 tile.lilrichymod:glass/clearGlassBlue.name=Clear Blue Glass

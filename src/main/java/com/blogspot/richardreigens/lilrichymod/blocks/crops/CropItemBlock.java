@@ -1,4 +1,3 @@
-/*
 package com.blogspot.richardreigens.lilrichymod.blocks.crops;
 
 import net.minecraft.block.Block;
@@ -8,10 +7,9 @@ import net.minecraft.item.ItemStack;
 
 import java.util.List;
 
-*/
 /**
  * Created by Rich on 12/5/2015.
- *//*
+ */
 
 public class CropItemBlock extends ItemBlock {
     public static Block block;
@@ -26,4 +24,3 @@ public class CropItemBlock extends ItemBlock {
         if (block != null && block instanceof BeardedAzalea) list.add("Designed By: Aaeos");
     }
 }
-*/

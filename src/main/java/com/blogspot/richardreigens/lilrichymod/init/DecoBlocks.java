@@ -1,9 +1,12 @@
 package com.blogspot.richardreigens.lilrichymod.init;
 
+import com.blogspot.richardreigens.lilrichymod.blocks.crops.BeardedAzalea;
+import com.blogspot.richardreigens.lilrichymod.blocks.crops.CropItemBlock;
+import com.blogspot.richardreigens.lilrichymod.blocks.crops.LiLRichyCrop;
 import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.BlockConcrete;
-import com.blogspot.richardreigens.lilrichymod.reference.DecoBlockVarStrings;
 import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.DecoSubBlocks;
 import com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks.ItemBlockMeta;
+import com.blogspot.richardreigens.lilrichymod.reference.DecoBlockVarStrings;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import net.minecraft.block.Block;
@@ -21,6 +24,8 @@ import java.util.ArrayList;
  * Created by LiLRichy on 2/15/2016.
  */
 public class DecoBlocks {
+    //Crops
+    public static final LiLRichyCrop beardedAzalea = new BeardedAzalea(Names.Crops.BEARDED_AZALEA);
 
     //Concrete
     public static Block concrete_block = new BlockConcrete(Names.Blocks.CONCRETE, Material.rock);
@@ -62,6 +67,8 @@ public class DecoBlocks {
      * Color Versions of Blocks should also Ore Dictionary there main version.
      */
     public static void register() {
+        //Crops
+        GameRegistry.registerBlock(beardedAzalea, CropItemBlock.class, beardedAzalea.getUnlocalizedName().substring(5));
 
         //Concrete
         GameRegistry.registerBlock(concrete_block, concrete_block.getUnlocalizedName().substring(5));
@@ -114,6 +121,9 @@ public class DecoBlocks {
      * Register the block to be rendered as an item.
      */
     public static void registerRenders() {
+
+        //Crops
+        registerRender(beardedAzalea);
 
         //Concrete
         registerRender(concrete_block);
