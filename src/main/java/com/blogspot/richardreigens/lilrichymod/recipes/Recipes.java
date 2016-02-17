@@ -42,7 +42,7 @@ public class Recipes {
 
         //Smelt Blocks back to Concrete
         for (ItemStack aList : OreDictionary.getOres(Names.OreDicNames.SMELT_TO_CONCRETE)) {
-            GameRegistry.addSmelting(new ItemStack(aList.getItem()), new ItemStack(DecoBlocks.concrete_block), 0.1f);
+            GameRegistry.addSmelting(new ItemStack(aList.getItem(),1, aList.getItem().getDamage(aList)), new ItemStack(DecoBlocks.concrete_block), 0.1f);
         }
     }
 

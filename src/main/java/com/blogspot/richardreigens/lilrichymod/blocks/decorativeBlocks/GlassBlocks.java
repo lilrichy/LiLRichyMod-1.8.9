@@ -1,7 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks;
 
 import com.blogspot.richardreigens.lilrichymod.creativeTab.CreativeTabLiLRichyMod;
-import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.util.BlockPos;
@@ -86,20 +85,4 @@ public class GlassBlocks extends Block {
     public boolean shouldSideBeRendered(IBlockAccess worldIn, BlockPos pos, EnumFacing side) {
         return super.shouldSideBeRendered(worldIn, pos, side);
     }
-
-    @Override
-    public String getUnlocalizedName() {
-        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", "glass/" + getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
-    }
-
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
-    }
-
-   /* @Override
-    @SideOnly(Side.CLIENT)
-
-    public void registerBlockIcons(IIconRegister iconRegister) {
-        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
-    }*/
 }
