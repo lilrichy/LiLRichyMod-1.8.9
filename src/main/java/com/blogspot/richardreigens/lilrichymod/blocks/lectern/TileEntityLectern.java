@@ -8,8 +8,11 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.network.Packet;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntityEnchantmentTable;
+import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.ITickable;
 import net.minecraftforge.fml.common.Loader;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.ArrayList;
@@ -29,11 +32,11 @@ public class TileEntityLectern extends TileEntityEnchantmentTable implements ITi
     }
 
     private void updateBookRender() {
-       /* this.field_145927_n = this.field_145930_m;
-        this.field_145925_p = this.field_145928_o;
-        this.field_145930_m += 0.1F;
+        this.bookSpreadPrev = this.bookSpread;
+        this.bookRotationPrev = this.bookRotation;
+        this.bookSpread += 0.1F;
 
-        if (this.field_145930_m < 0.5F || worldObj.rand.nextInt(20) == 0) {
+        if (this.bookSpread < 0.5F || worldObj.rand.nextInt(20) == 0) {
             float f1 = this.field_145932_k;
 
             do {
@@ -42,12 +45,12 @@ public class TileEntityLectern extends TileEntityEnchantmentTable implements ITi
             while (f1 == this.field_145932_k);
         }
 
-        while (this.field_145928_o >= (float) Math.PI) {
-            this.field_145928_o -= ((float) Math.PI * 2F);
+        while (this.bookRotation >= (float) Math.PI) {
+            this.bookRotation -= ((float) Math.PI * 2F);
         }
 
-        while (this.field_145928_o < -(float) Math.PI) {
-            this.field_145928_o += ((float) Math.PI * 2F);
+        while (this.bookRotation < -(float) Math.PI) {
+            this.bookRotation += ((float) Math.PI * 2F);
         }
 
         while (this.field_145924_q >= (float) Math.PI) {
@@ -60,29 +63,38 @@ public class TileEntityLectern extends TileEntityEnchantmentTable implements ITi
 
         float f2;
 
-        for (f2 = this.field_145924_q - this.field_145928_o; f2 >= (float) Math.PI; f2 -= ((float) Math.PI * 2F)) {
+        for (f2 = this.field_145924_q - this.bookRotation; f2 >= (float) Math.PI; f2 -= ((float) Math.PI * 2F)) {
 
         }
         while (f2 < -(float) Math.PI) {
             f2 += ((float) Math.PI * 2F);
         }
 
-        this.field_145928_o += f2 * 0.4F;
+        this.bookRotation += f2 * 0.4F;
 
-        if (this.field_145930_m < 0.0F) this.field_145930_m = 0.0F;
-        if (this.field_145930_m > 1.0F) this.field_145930_m = 1.0F;
+        if (this.bookSpread < 0.0F) this.bookSpread = 0.0F;
+        if (this.bookSpread > 1.0F) this.bookSpread = 1.0F;
 
-        ++this.field_145926_a;
-        this.field_145931_j = this.field_145933_i;
-        float f = (this.field_145932_k - this.field_145933_i) * 0.4F;
+        ++this.tickCount;
+        this.pageFlipPrev = this.pageFlip;
+        float f = (this.field_145932_k - this.pageFlip) * 0.4F;
         float f3 = 0.2F;
 
         if (f < -f3) f = -f3;
         if (f > f3) f = f3;
 
         this.field_145929_l += (f - this.field_145929_l) * 0.9F;
-        this.field_145933_i += this.field_145929_l;*/
+        this.pageFlip += this.field_145929_l;
     }
+
+    @SideOnly(Side.CLIENT)
+    @Override
+    public AxisAlignedBB getRenderBoundingBox() {
+        // if your render should always be performed regardless of where the player is looking, use infinite
+        AxisAlignedBB infiniteExample = INFINITE_EXTENT_AABB;
+        return infiniteExample;
+    }
+
 
     public ItemStack getStack() {
         return stack;
@@ -107,7 +119,8 @@ public class TileEntityLectern extends TileEntityEnchantmentTable implements ITi
     public Packet getDescriptionPacket() {
         NBTTagCompound compound = new NBTTagCompound();
         writeToNBT(compound);
-        S35PacketUpdateTileEntity packet = new S35PacketUpdateTileEntity(pos, worldObj.getBlockState(pos).getBlock().getMetaFromState(
+        S35PacketUpdateTileEntity packet = new S35PacketUpdateTileEntity(pos,
+                worldObj.getBlockState(pos).getBlock().getMetaFromState(
                 worldObj.getBlockState(pos)), compound);
         return packet;
     }

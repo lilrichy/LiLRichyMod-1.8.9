@@ -2,9 +2,12 @@ package com.blogspot.richardreigens.lilrichymod.blocks.lectern;
 
 import com.blogspot.richardreigens.lilrichymod.creativeTab.CreativeTabLiLRichyMod;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
-import com.blogspot.richardreigens.lilrichymod.reference.Reference;
+import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.properties.PropertyDirection;
+import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
@@ -14,7 +17,6 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
 /**
@@ -22,12 +24,14 @@ import net.minecraft.world.World;
  */
 public class BlockLectern extends BlockContainer {
 //Todo Item Model, Book Renderer, On right click not working rotation not working also
+
+    public static final PropertyDirection PROPERTYFACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+
     public BlockLectern() {
         super(Material.wood);
         setHardness(2.0f);
         setResistance(2.0f);
         this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
-        //  this.setBlockTextureName(Reference.MOD_ID + ":" + Names.Models.BLOCK_TABLE);
         this.setUnlocalizedName(Names.Models.LECTERN);
     }
 
@@ -37,36 +41,20 @@ public class BlockLectern extends BlockContainer {
     }
 
     @Override
-    public String getUnlocalizedName() {
-        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
-    }
-
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
-    }
-
-    @Override
     public int getRenderType() {
-        return -1;
+        return 2;
     }
 
     @Override
     public boolean isOpaqueCube() {
         return false;
     }
-/*
-
-    @Override
-    public boolean renderAsNormalBlock() {
-        return false;
-    }
-*/
 
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumFacing side, float hitX, float hitY, float hitZ) {
         super.onBlockActivated(worldIn, pos, state, playerIn, side, hitX, hitY, hitZ);
 
-        TileEntityLectern te = getTileEntity(worldIn, pos.getX(), pos.getY(), pos.getZ());
+        TileEntityLectern te = getTileEntity(worldIn, pos);
         if (te == null) {
             return true;
         }
@@ -90,6 +78,7 @@ public class BlockLectern extends BlockContainer {
                 te.setStack(null);
             } else {
                 //Open Book
+                LogHelper.info(te.getStack().getItem());
                 te.getStack().getItem().onItemRightClick(te.getStack(), worldIn, playerIn);
             }
         } else {
@@ -108,7 +97,7 @@ public class BlockLectern extends BlockContainer {
     @Override
     public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
 
-        TileEntityLectern te = getTileEntity(worldIn, pos.getX(), pos.getY(), pos.getZ());
+        TileEntityLectern te = getTileEntity(worldIn, pos);
         if (te == null) return;
 
         if (!worldIn.isRemote) {
@@ -130,8 +119,7 @@ public class BlockLectern extends BlockContainer {
         super.breakBlock(worldIn, pos, state);
     }
 
-    private TileEntityLectern getTileEntity(World world, int x, int y, int z) {
-        BlockPos pos = new BlockPos(x,y,z);
+    private TileEntityLectern getTileEntity(World world, BlockPos pos) {
         TileEntity te = world.getTileEntity(pos);
         if (te != null && te instanceof TileEntityLectern) {
             return (TileEntityLectern) te;
@@ -140,16 +128,33 @@ public class BlockLectern extends BlockContainer {
     }
 
     @Override
-    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
-        int p = MathHelper.floor_double((placer.rotationYaw * 4F) / 360F + 0.5D) & 3;
-        byte byte0 = 3;
+    public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing blockFaceClickedOn, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
+        EnumFacing enumfacing = (placer == null) ? EnumFacing.NORTH : EnumFacing.fromAngle(placer.rotationYaw);
 
-        if (p == 0) byte0 = 4;
-        if (p == 1) byte0 = 3;
-        if (p == 2) byte0 = 2;
-        if (p == 3) byte0 = 1;
+        return this.getDefaultState().withProperty(PROPERTYFACING, enumfacing);
+    }
 
-        worldIn.setBlockState(pos,state,byte0);
-        super.onBlockPlacedBy(worldIn, pos, state, placer, stack);
+    @Override
+    public IBlockState getStateFromMeta(int meta) {
+        EnumFacing facing = EnumFacing.getHorizontal(meta);
+        return this.getDefaultState().withProperty(PROPERTYFACING, facing);
+    }
+
+    @Override
+    public int getMetaFromState(IBlockState state) {
+        EnumFacing facing = (EnumFacing) state.getValue(PROPERTYFACING);
+        int facingbits = facing.getHorizontalIndex();
+
+        return facingbits;
+    }
+
+    @Override
+    protected BlockState createBlockState() {
+        return new BlockState(this, new IProperty[]{PROPERTYFACING});
+    }
+
+    @Override
+    public boolean isFullBlock() {
+        return false;
     }
 }

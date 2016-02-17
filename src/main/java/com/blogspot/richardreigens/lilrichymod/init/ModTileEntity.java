@@ -4,14 +4,18 @@ import com.blogspot.richardreigens.lilrichymod.blocks.advancedPlayerDetector.Blo
 import com.blogspot.richardreigens.lilrichymod.blocks.blockTable.BlockTable;
 import com.blogspot.richardreigens.lilrichymod.blocks.blockTable.TileEntityBlockTable;
 import com.blogspot.richardreigens.lilrichymod.blocks.lectern.BlockLectern;
+import com.blogspot.richardreigens.lilrichymod.blocks.lectern.LecternRender;
+import com.blogspot.richardreigens.lilrichymod.blocks.lectern.TileEntityLectern;
 import com.blogspot.richardreigens.lilrichymod.blocks.playerDetector.BlockPlayerDetector;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import com.blogspot.richardreigens.lilrichymod.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
@@ -40,10 +44,21 @@ public class ModTileEntity {
 
         GameRegistry.registerBlock(blockTable, blockTable.getUnlocalizedName().substring(5));
         GameRegistry.registerTileEntity(TileEntityBlockTable.class, Names.Models.BLOCK_TABLE);
+
+        //Lectern
+        GameRegistry.registerBlock(lectern, Names.Models.LECTERN);
+        GameRegistry.registerTileEntity(TileEntityLectern.class, Names.Models.LECTERN);
+
+
     }
 
     public static void registerRenders() {
         registerRender(blockTable);
+        //registerRender(lectern);
+        TileEntitySpecialRenderer renderLectern = new LecternRender();
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityLectern.class, renderLectern);
+        //MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModTileEntity.lectern), new ItemRenderLectern(renderLectern, new TileEntityLectern()));
+
     }
 
     public static void registerRender(Block block) {

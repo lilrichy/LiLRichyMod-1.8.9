@@ -33,7 +33,7 @@ public class ClientProxy extends CommonProxy {
 
 //        TileEntitySpecialRenderer renderLectern = new LecternRender();
 //        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityLectern.class, renderLectern);
-     //   MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModTileEntity.lectern), new ItemRenderLectern(renderLectern, new TileEntityLectern()));
+//        //MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModTileEntity.lectern), new ItemRenderLectern(renderLectern, new TileEntityLectern()));
     }
 
     @Override
