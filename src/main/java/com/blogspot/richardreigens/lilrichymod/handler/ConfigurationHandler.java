@@ -17,6 +17,7 @@ public class ConfigurationHandler {
     public static int defaultRangePlayerDetector, defaultRangeAdvancedDetector;
     public static boolean flipPlayers;
     public static boolean resetConfigFile;
+    public static boolean debugMessages;
 
     private static void loadConfiguration() {
         String GENERAL_SETTINGS = "General Mod Settings";
@@ -38,6 +39,7 @@ public class ConfigurationHandler {
 
         String FUN_SETTINGS = "Fun Settings";
         flipPlayers = configuration.getBoolean("Flip Players", FUN_SETTINGS, false, "Flip Players Upside Down.");
+        debugMessages = configuration.getBoolean("Display Debug Text", FUN_SETTINGS, false, "Displays text used for debugging the mod.");
 
         if (configuration.hasChanged()) {
             configuration.save();

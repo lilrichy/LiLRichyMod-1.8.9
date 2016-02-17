@@ -4,6 +4,7 @@ package com.blogspot.richardreigens.lilrichymod.blocks.decorativeBlocks;
  * Created by LiLRichy on 2/15/2016.
  */
 
+import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBlock;
@@ -42,10 +43,9 @@ public class ItemBlockMeta extends ItemBlock {
         if (block != null && GlassBlocks.getCraftTip(block) != null) list.add(GlassBlocks.getCraftTip(block));
 
         //Set to use for debugging - will show OreDictionary values in tool tips.
-        Boolean debug = true;
-        if (debug) {
+        if (ConfigurationHandler.debugMessages) {
             int[] l = OreDictionary.getOreIDs(stack);
-            list.add("Ore Dictionary Names:");
+            list.add("\u00a7a" +"Ore Dictionary Names:");
             for (int aL : l) list.add("  -" + OreDictionary.getOreName(aL));
         }
     }
