@@ -39,6 +39,16 @@ public class DecoSubBlocks extends DecorativeBlocks implements IMetaBlockName {
         this.types = types;
     }
 
+    public DecoSubBlocks(String name, Material material, String toolTip, String toolTip2, String[] types) {
+        super(name, material, toolTip, toolTip2);
+        this.setHardness(2f);
+        this.setStepSound(soundTypeStone);
+        this.setCreativeTab(CreativeTabLiLRichyMod.LR_Tab);
+        this.setUnlocalizedName(name);
+        this.setDefaultState(this.blockState.getBaseState().withProperty(TYPE, EnumDecoType.DECOVAR0));
+        this.types = types;
+    }
+
     /**
      * Returns the Blockstate based on the Meta Data
      * Must be Accurate with getMetaFromState

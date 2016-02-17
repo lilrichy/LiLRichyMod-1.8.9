@@ -25,6 +25,21 @@ public class Names {
         public static final String STAIRS = "lilrichyStairs";
     }
 
+    public static class CraftingToolTips{
+        //Strings for tool tips for crafting recipies for decorative blocks.
+        public static final String CRAFT_WITH = "\u00a7a" + "Craft in Block Table with:";
+        public static final String METAL_BLOCKS = "Concrete and Iron Ingot";
+        public static final String LAVA_BLOCKS = "Concrete and Netherrack";
+        public static final String STONE_BLOCKS = "Concrete and Stone";
+        public static final String COTTAGE_BLOCKS = "Concrete and Wood Planks";
+        public static final String MARBLE_BLOCKS = "Concrete and Sandstone";
+        public static final String CONCRETE_BLOCKS = "Concrete and Crushed Concrete";
+        public static final String LAVA_BOWL_COLORS = "Lava Bowl and Essence Of Bearded";
+        public static final String METAL_ROBOT_COLORS = "Metal Battered Robot and Essence Of Bearded";
+        public static final String GLASS_COLORS = "Glass and Essence Of Bearded";
+        public static final String STONE_MINERALS_COLORS_CRAFT = "Stone Minerals and Essence of Bearded";
+    }
+
     public static class Glass {
         public static final String CLEAR_GLASS_BLUE = "clearGlassBlue";
         public static final String CLEAR_GLASS_BLUE_PANE = "clearGlassBluePane";
@@ -126,7 +141,6 @@ public class Names {
         public static final String CONCRETE_MIX = "concreteMix";
         public static final String CRUSHED_CONCRETE = "crushedConcrete";
         public static final String DEATH_SOCK = "deathSock";
-        public static final String SHADOWMOURNE = "shadowmourne";
         public static final String ESSENCE_OF_BEARED = "essenceOfBeared";
     }
 

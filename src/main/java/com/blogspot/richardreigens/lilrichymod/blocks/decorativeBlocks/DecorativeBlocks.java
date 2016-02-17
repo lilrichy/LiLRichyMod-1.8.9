@@ -45,6 +45,8 @@ public class DecorativeBlocks extends Block {
         this.blockCraftTip = null;
     }
 
+
+
     public static String getToolTip(Block block) {
         if (block instanceof DecorativeBlocks) {
             DecorativeBlocks n = (DecorativeBlocks) block;
@@ -52,7 +54,7 @@ public class DecorativeBlocks extends Block {
         } else return null;
     }
 
-    public static Object getCraftTip(Block block) {
+    public static Object getToolTip2(Block block) {
         if (block instanceof DecorativeBlocks) {
             DecorativeBlocks n = (DecorativeBlocks) block;
             return n.blockCraftTip;

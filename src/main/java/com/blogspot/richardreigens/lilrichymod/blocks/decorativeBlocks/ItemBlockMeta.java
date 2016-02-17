@@ -14,7 +14,6 @@ import net.minecraftforge.oredict.OreDictionary;
 import java.util.List;
 
 public class ItemBlockMeta extends ItemBlock {
-
     public ItemBlockMeta(Block block) {
         super(block);
         if (!(block instanceof IMetaBlockName)) {
@@ -37,7 +36,7 @@ public class ItemBlockMeta extends ItemBlock {
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean show) {
         //Decorative Blocks
         if (block != null && DecorativeBlocks.getToolTip(block) != null) list.add(DecorativeBlocks.getToolTip(block));
-        if (block != null && DecorativeBlocks.getCraftTip(block) != null) list.add(DecorativeBlocks.getCraftTip(block));
+        if (block != null && DecorativeBlocks.getToolTip2(block) != null) list.add(DecorativeBlocks.getToolTip2(block));
         // Glass Blocks
         if (block != null && GlassBlocks.getToolTip(block) != null) list.add(GlassBlocks.getToolTip(block));
         if (block != null && GlassBlocks.getCraftTip(block) != null) list.add(GlassBlocks.getCraftTip(block));

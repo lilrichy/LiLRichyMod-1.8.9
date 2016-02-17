@@ -31,32 +31,32 @@ public class DecoBlocks {
     public static Block concrete_block = new BlockConcrete(Names.Blocks.CONCRETE, Material.rock);
 
     public static Block deco_concrete = new DecoSubBlocks("DecoConcrete", Material.rock,
-            Reference.CRAFT_WITH + Reference.CONCRETE_BLOCKS, DecoBlockVarStrings.concreteTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.CONCRETE_BLOCKS, DecoBlockVarStrings.concreteTypes);
     //Cottage
     public static Block deco_cottage = new DecoSubBlocks("DecoCottage", Material.wood,
-            Reference.CRAFT_WITH + Reference.COTTAGE_BLOCKS, DecoBlockVarStrings.cottageTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.COTTAGE_BLOCKS, DecoBlockVarStrings.cottageTypes);
 
     //Lava
     public static Block deco_lava = new DecoSubBlocks("DecoLava", Material.rock,
-            Reference.CRAFT_WITH + Reference.LAVA_BLOCKS, DecoBlockVarStrings.lavaTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.LAVA_BLOCKS, DecoBlockVarStrings.lavaTypes);
     public static Block deco_lavaBowlColors = new DecoSubBlocks("DecoLavaBowlColors", Material.rock,
-           Reference.LAVA_BOWL_COLORS, DecoBlockVarStrings.lavaBowlTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.LAVA_BOWL_COLORS, DecoBlockVarStrings.lavaBowlTypes);
 
     //Marble
     public static Block deco_marble = new DecoSubBlocks("DecoMarble", Material.rock,
-            Reference.CRAFT_WITH + Reference.MARBLE_BLOCKS, DecoBlockVarStrings.marbleTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.MARBLE_BLOCKS, DecoBlockVarStrings.marbleTypes);
 
     //Metal
     public static Block deco_metal = new DecoSubBlocks("DecoMetal", Material.iron,
-            Reference.CRAFT_WITH + Reference.METAL_BLOCKS, DecoBlockVarStrings.metalTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.METAL_BLOCKS, DecoBlockVarStrings.metalTypes);
     public static Block deco_metalRobotColors = new DecoSubBlocks("DecoMetalRobotColors", Material.iron,
-            Reference.METAL_ROBOT_COLORS, DecoBlockVarStrings.metalRobotTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.METAL_ROBOT_COLORS, DecoBlockVarStrings.metalRobotTypes);
 
     //Stone
     public static Block deco_stone = new DecoSubBlocks("DecoStone", Material.rock,
-            Reference.CRAFT_WITH + Reference.STONE_BLOCKS, DecoBlockVarStrings.stoneTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.STONE_BLOCKS, DecoBlockVarStrings.stoneTypes);
     public static Block deco_stoneMineralsColors = new DecoSubBlocks("DecoStoneMineralsColors", Material.rock,
-            Reference.STONE_MINERALS_COLORS_CRAFT, DecoBlockVarStrings.stoneMineralsTypes);
+            Names.CraftingToolTips.CRAFT_WITH, Names.CraftingToolTips.STONE_MINERALS_COLORS_CRAFT, DecoBlockVarStrings.stoneMineralsTypes);
 
     /**
      * Initial Registry
@@ -91,7 +91,6 @@ public class DecoBlocks {
         registerOreDicMeta(deco_lavaBowlColors, Names.OreDicNames.LAVA_BOWL);
         registerOreDicMeta(deco_lavaBowlColors, Names.OreDicNames.LAVA);
         registerOreDicMeta(deco_lavaBowlColors, Names.OreDicNames.SMELT_TO_CONCRETE);
-
 
         //Marble
         GameRegistry.registerBlock(deco_marble, ItemBlockMeta.class, "DecoMarble");
@@ -145,7 +144,8 @@ public class DecoBlocks {
 
         //Stone
         for (int i = 0; i < DecoBlockVarStrings.stoneTypes.length; i++) registerRender(deco_stone, i);
-        for (int i = 0; i < DecoBlockVarStrings.stoneMineralsTypes.length; i++) registerRender(deco_stoneMineralsColors, i);
+        for (int i = 0; i < DecoBlockVarStrings.stoneMineralsTypes.length; i++)
+            registerRender(deco_stoneMineralsColors, i);
     }
 
     /**
