@@ -2,7 +2,6 @@ package com.blogspot.richardreigens.lilrichymod.blocks.lectern;
 
 import com.blogspot.richardreigens.lilrichymod.creativeTab.CreativeTabLiLRichyMod;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
-import com.blogspot.richardreigens.lilrichymod.utility.LogHelper;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -78,8 +77,10 @@ public class BlockLectern extends BlockContainer {
                 te.setStack(null);
             } else {
                 //Open Book
-                LogHelper.info(te.getStack().getItem());
-                te.getStack().getItem().onItemRightClick(te.getStack(), worldIn, playerIn);
+
+                //ToDo This was not working in testing with wrtitten books, need to test Thaumcraft/botania books
+                te.getStack().getItem().onItemRightClick(getTileEntity(worldIn,pos).getStack(), worldIn, playerIn);
+
             }
         } else {
             if (playerIn.getCurrentEquippedItem() != null) {
@@ -119,7 +120,7 @@ public class BlockLectern extends BlockContainer {
         super.breakBlock(worldIn, pos, state);
     }
 
-    private TileEntityLectern getTileEntity(World world, BlockPos pos) {
+    public TileEntityLectern getTileEntity(World world, BlockPos pos) {
         TileEntity te = world.getTileEntity(pos);
         if (te != null && te instanceof TileEntityLectern) {
             return (TileEntityLectern) te;
