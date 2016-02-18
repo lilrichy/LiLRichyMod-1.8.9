@@ -4,7 +4,7 @@ import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.GuiHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.PacketDescriptionHandler;
 import com.blogspot.richardreigens.lilrichymod.handler.network.NetworkHandler;
-import com.blogspot.richardreigens.lilrichymod.init.DecoBlocks;
+import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import com.blogspot.richardreigens.lilrichymod.init.ModTileEntity;
 import com.blogspot.richardreigens.lilrichymod.proxy.CommonProxy;
@@ -45,7 +45,7 @@ public class lilrichymod {
 
         //Mod Blocks
         LogHelper.info("Blocks Loading");
-        DecoBlocks.register();
+        ModBlocks.register();
         // ModBlocks.init();
         // ModBlocksGlass.init();
 

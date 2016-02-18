@@ -1,7 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod.recipes;
 
 import com.blogspot.richardreigens.lilrichymod.handler.ConfigurationHandler;
-import com.blogspot.richardreigens.lilrichymod.init.DecoBlocks;
+import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import com.blogspot.richardreigens.lilrichymod.init.ModTileEntity;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
@@ -31,18 +31,18 @@ public class Recipes {
 
     public static void blockRecipes() {
         //Concrete
-        GameRegistry.addShapelessRecipe(new ItemStack(DecoBlocks.concrete_block),
+        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.concrete_block),
                 new ItemStack(ModItems.crushedConcrete), new ItemStack(ModItems.crushedConcrete),
                 new ItemStack(ModItems.crushedConcrete), new ItemStack(ModItems.crushedConcrete));
     }
 
     public static void smeltingRecipes() {
         //Concrete
-        GameRegistry.addSmelting(new ItemStack(ModItems.concreteMix), new ItemStack(DecoBlocks.concrete_block), 0.1f);
+        GameRegistry.addSmelting(new ItemStack(ModItems.concreteMix), new ItemStack(ModBlocks.concrete_block), 0.1f);
 
         //Smelt Blocks back to Concrete
         for (ItemStack aList : OreDictionary.getOres(Names.OreDicNames.SMELT_TO_CONCRETE)) {
-            GameRegistry.addSmelting(new ItemStack(aList.getItem(),1, aList.getItem().getDamage(aList)), new ItemStack(DecoBlocks.concrete_block), 0.1f);
+            GameRegistry.addSmelting(new ItemStack(aList.getItem(),1, aList.getItem().getDamage(aList)), new ItemStack(ModBlocks.concrete_block), 0.1f);
         }
     }
 

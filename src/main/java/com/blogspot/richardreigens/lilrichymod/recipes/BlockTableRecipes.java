@@ -1,6 +1,6 @@
 package com.blogspot.richardreigens.lilrichymod.recipes;
 
-import com.blogspot.richardreigens.lilrichymod.init.DecoBlocks;
+import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import com.blogspot.richardreigens.lilrichymod.reference.Names;
 import net.minecraft.init.Blocks;
@@ -27,52 +27,52 @@ public class BlockTableRecipes {
          * Ore Dictionary Recipes - Allow blocks to convert between similar types.
          */
         //Concrete
-        this.addRecipe(new ItemStack(DecoBlocks.deco_concrete), new ItemStack(DecoBlocks.concrete_block), new ItemStack(ModItems.crushedConcrete));
+        this.addRecipe(new ItemStack(ModBlocks.deco_concrete), new ItemStack(ModBlocks.concrete_block), new ItemStack(ModItems.crushedConcrete));
         for (ItemStack aConcrete : OreDictionary.getOres(Names.OreDicNames.CONCRETE))
-            this.addRecipe(new ItemStack(DecoBlocks.deco_concrete), new ItemStack(aConcrete.getItem()), new ItemStack(ModItems.crushedConcrete));
+            this.addRecipe(new ItemStack(ModBlocks.deco_concrete), new ItemStack(aConcrete.getItem()), new ItemStack(ModItems.crushedConcrete));
 
         //Metal
-        this.addRecipe(new ItemStack(DecoBlocks.deco_metal), new ItemStack(DecoBlocks.concrete_block), new ItemStack(Items.iron_ingot));
+        this.addRecipe(new ItemStack(ModBlocks.deco_metal), new ItemStack(ModBlocks.concrete_block), new ItemStack(Items.iron_ingot));
         for (ItemStack aMetal : OreDictionary.getOres(Names.OreDicNames.METAL))
-            this.addRecipe(new ItemStack(DecoBlocks.deco_metal), new ItemStack(aMetal.getItem()), new ItemStack(Items.iron_ingot));
+            this.addRecipe(new ItemStack(ModBlocks.deco_metal), new ItemStack(aMetal.getItem()), new ItemStack(Items.iron_ingot));
 
-        this.addRecipe(new ItemStack(DecoBlocks.deco_metalRobotColors), new ItemStack(DecoBlocks.deco_metal.getStateFromMeta(1).getBlock()), new ItemStack(ModItems.essanceOfBeared));
+        this.addRecipe(new ItemStack(ModBlocks.deco_metalRobotColors), new ItemStack(ModBlocks.deco_metal.getStateFromMeta(1).getBlock()), new ItemStack(ModItems.essanceOfBeared));
         for (ItemStack aMetalRobot : OreDictionary.getOres(Names.OreDicNames.METAL_ROBOT))
-            this.addRecipe(new ItemStack(DecoBlocks.deco_metalRobotColors), new ItemStack(aMetalRobot.getItem()), new ItemStack(ModItems.essanceOfBeared));
+            this.addRecipe(new ItemStack(ModBlocks.deco_metalRobotColors), new ItemStack(aMetalRobot.getItem()), new ItemStack(ModItems.essanceOfBeared));
 
         //Marble
-        this.addRecipe(new ItemStack(DecoBlocks.deco_marble), new ItemStack(DecoBlocks.concrete_block), new ItemStack(Blocks.sandstone));
+        this.addRecipe(new ItemStack(ModBlocks.deco_marble), new ItemStack(ModBlocks.concrete_block), new ItemStack(Blocks.sandstone));
         for (ItemStack aMarble : OreDictionary.getOres(Names.OreDicNames.MARBLE))
-            this.addRecipe(new ItemStack(DecoBlocks.deco_marble), new ItemStack(aMarble.getItem()), new ItemStack(Blocks.sandstone));
+            this.addRecipe(new ItemStack(ModBlocks.deco_marble), new ItemStack(aMarble.getItem()), new ItemStack(Blocks.sandstone));
 
         //Lava
-        this.addRecipe(new ItemStack(DecoBlocks.deco_lava), new ItemStack(DecoBlocks.concrete_block), new ItemStack(Blocks.netherrack));
+        this.addRecipe(new ItemStack(ModBlocks.deco_lava), new ItemStack(ModBlocks.concrete_block), new ItemStack(Blocks.netherrack));
         for (ItemStack aLava : OreDictionary.getOres(Names.OreDicNames.LAVA))
-            this.addRecipe(new ItemStack(DecoBlocks.deco_lava), new ItemStack(aLava.getItem()), new ItemStack(Blocks.netherrack));
+            this.addRecipe(new ItemStack(ModBlocks.deco_lava), new ItemStack(aLava.getItem()), new ItemStack(Blocks.netherrack));
 
-        this.addRecipe(new ItemStack(DecoBlocks.deco_lavaBowlColors), new ItemStack(DecoBlocks.deco_lava.getStateFromMeta(0).getBlock()), new ItemStack(ModItems.essanceOfBeared));
+        this.addRecipe(new ItemStack(ModBlocks.deco_lavaBowlColors), new ItemStack(ModBlocks.deco_lava.getStateFromMeta(0).getBlock()), new ItemStack(ModItems.essanceOfBeared));
         for (ItemStack aLavaBowl : OreDictionary.getOres(Names.OreDicNames.LAVA_BOWL))
-            this.addRecipe(new ItemStack(DecoBlocks.deco_lavaBowlColors), new ItemStack(aLavaBowl.getItem()), new ItemStack(ModItems.essanceOfBeared));
+            this.addRecipe(new ItemStack(ModBlocks.deco_lavaBowlColors), new ItemStack(aLavaBowl.getItem()), new ItemStack(ModItems.essanceOfBeared));
 
         //Stone
-        this.addRecipe(new ItemStack(DecoBlocks.deco_stone), new ItemStack(DecoBlocks.concrete_block), new ItemStack(Blocks.stone));
+        this.addRecipe(new ItemStack(ModBlocks.deco_stone), new ItemStack(ModBlocks.concrete_block), new ItemStack(Blocks.stone));
         for (ItemStack aStone : OreDictionary.getOres(Names.OreDicNames.STONE))
-            this.addRecipe(new ItemStack(DecoBlocks.deco_stone), new ItemStack(aStone.getItem()), new ItemStack(Blocks.stone));
+            this.addRecipe(new ItemStack(ModBlocks.deco_stone), new ItemStack(aStone.getItem()), new ItemStack(Blocks.stone));
 
-        this.addRecipe(new ItemStack(DecoBlocks.deco_stoneMineralsColors), new ItemStack(DecoBlocks.deco_stone.getStateFromMeta(5).getBlock()), new ItemStack(ModItems.essanceOfBeared));
+        this.addRecipe(new ItemStack(ModBlocks.deco_stoneMineralsColors), new ItemStack(ModBlocks.deco_stone.getStateFromMeta(5).getBlock()), new ItemStack(ModItems.essanceOfBeared));
         for (ItemStack aMinerals : OreDictionary.getOres(Names.OreDicNames.STONE_MINERALS))
-            this.addRecipe(new ItemStack(DecoBlocks.deco_stoneMineralsColors), new ItemStack(aMinerals.getItem()), new ItemStack(ModItems.essanceOfBeared));
+            this.addRecipe(new ItemStack(ModBlocks.deco_stoneMineralsColors), new ItemStack(aMinerals.getItem()), new ItemStack(ModItems.essanceOfBeared));
 
         //Cottage
         for (ItemStack aPlanks : OreDictionary.getOres("plankWood"))
-            this.addRecipe(new ItemStack(DecoBlocks.deco_cottage), new ItemStack(DecoBlocks.concrete_block), new ItemStack(aPlanks.getItem()));
+            this.addRecipe(new ItemStack(ModBlocks.deco_cottage), new ItemStack(ModBlocks.concrete_block), new ItemStack(aPlanks.getItem()));
         for (ItemStack aCottage : OreDictionary.getOres(Names.OreDicNames.COTTAGE)) {
             for (ItemStack aPlanks : OreDictionary.getOres("plankWood"))
-                this.addRecipe(new ItemStack(DecoBlocks.deco_cottage), new ItemStack(aCottage.getItem()), new ItemStack(aPlanks.getItem()));
+                this.addRecipe(new ItemStack(ModBlocks.deco_cottage), new ItemStack(aCottage.getItem()), new ItemStack(aPlanks.getItem()));
         }
 
         for (ItemStack aGlass : OreDictionary.getOres("blockGlass"))
-            this.addRecipe(new ItemStack(DecoBlocks.deco_ClearGlass), new ItemStack(aGlass.getItem()), new ItemStack(ModItems.essanceOfBeared));
+            this.addRecipe(new ItemStack(ModBlocks.deco_ClearGlass), new ItemStack(aGlass.getItem()), new ItemStack(ModItems.essanceOfBeared));
 
 
 
@@ -88,7 +88,7 @@ public class BlockTableRecipes {
     public static boolean isCraftableBlock(ItemStack stack) {
         //Check if valid block
         if (stack != null) {
-            if (stack.isItemEqual(new ItemStack(DecoBlocks.concrete_block))) return true;
+            if (stack.isItemEqual(new ItemStack(ModBlocks.concrete_block))) return true;
 
             //Ore Dictionary usage
             for (ItemStack iStack : OreDictionary.getOres("blockGlass"))

@@ -1,7 +1,7 @@
 package com.blogspot.richardreigens.lilrichymod.proxy;
 
 import com.blogspot.richardreigens.lilrichymod.handler.EventHandler;
-import com.blogspot.richardreigens.lilrichymod.init.DecoBlocks;
+import com.blogspot.richardreigens.lilrichymod.init.ModBlocks;
 import com.blogspot.richardreigens.lilrichymod.init.ModItems;
 import com.blogspot.richardreigens.lilrichymod.init.ModTileEntity;
 import net.minecraft.client.Minecraft;
@@ -19,7 +19,7 @@ public class ClientProxy extends CommonProxy {
     public void registerRenderers() {
 
         //Block Item Renderer
-        DecoBlocks.registerRenders();
+        ModBlocks.registerRenders();
         //Tile Entity Renderer
         ModTileEntity.registerRenders();
 
