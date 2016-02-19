@@ -13,7 +13,7 @@ import java.io.File;
 public class ConfigurationHandler {
     public static Configuration configuration;
     public static boolean loadPlayerDetector, loadAdvancedDetector;
-    public static boolean smeltingRecipes, itemRecipes, panelRecipes, thermalExpansionRecipes, coalDustRecipe, enderIORecipies, loadDecorativeBlockRecipes;
+    public static boolean smeltingRecipes, itemRecipes, panelRecipes, thermalExpansionRecipes, coalDustRecipe, enderIORecipies, leaverRecipe;
     public static int defaultRangePlayerDetector, defaultRangeAdvancedDetector;
     public static boolean flipPlayers;
     public static boolean resetConfigFile;
@@ -32,6 +32,7 @@ public class ConfigurationHandler {
         loadPlayerDetector = configuration.getBoolean("Enable Player Detector", SHOULD_LOAD, true, "Enable the Player Detector Block.");
         loadAdvancedDetector = configuration.getBoolean("Enable Advanced Detector", SHOULD_LOAD, true, "Enable the Advanced Detector Block.");
         coalDustRecipe = configuration.getBoolean("Coal/Charcoal Dye", SHOULD_LOAD, true, "Enable to make Pulverized Coal and Charcoal useable as Black Dye. *Disabled if Thermal Expansion Recipes are Disabled");
+        leaverRecipe = configuration.getBoolean("Leaver from stick and stone", SHOULD_LOAD, true, "Enable to add a convenience recipe to craft a leaver out of any stone block as well as cobblestone.");
 
         String DETECTOR_SETTINGS = "Detector Settings";
         defaultRangePlayerDetector = configuration.getInt("Range Player Detector", DETECTOR_SETTINGS, 2, 1, 20, "Range of the Player Detector");

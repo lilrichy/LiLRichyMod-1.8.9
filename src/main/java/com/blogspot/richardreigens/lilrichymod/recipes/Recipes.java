@@ -24,9 +24,18 @@ public class Recipes {
 
         if (ConfigurationHandler.smeltingRecipes) smeltingRecipes();
         if (ConfigurationHandler.itemRecipes) ItemRecipes.init();
-       // if (ConfigurationHandler.panelRecipes) PanelsRecipes.init();
+        // if (ConfigurationHandler.panelRecipes) PanelsRecipes.init();
         if (ConfigurationHandler.thermalExpansionRecipes) ModCompatRecipes.thermalExpansionRecipesInit();
         if (ConfigurationHandler.enderIORecipies) ModCompatRecipes.enderIORecipesInit();
+
+
+        // Adds recipe for leaver from stone and stick.
+        if (ConfigurationHandler.leaverRecipe) {
+            for (ItemStack stack : OreDictionary.getOres("stone")) {
+                GameRegistry.addRecipe(new ItemStack(Blocks.lever, 1), "s", "b", 'b',
+                        new ItemStack(stack.getItem(), 1, stack.getItem().getDamage(stack)), 's', new ItemStack(Items.stick));
+            }
+        }
     }
 
     public static void blockRecipes() {
@@ -42,7 +51,7 @@ public class Recipes {
 
         //Smelt Blocks back to Concrete
         for (ItemStack aList : OreDictionary.getOres(Names.OreDicNames.SMELT_TO_CONCRETE)) {
-            GameRegistry.addSmelting(new ItemStack(aList.getItem(),1, aList.getItem().getDamage(aList)), new ItemStack(ModBlocks.concrete_block), 0.1f);
+            GameRegistry.addSmelting(new ItemStack(aList.getItem(), 1, aList.getItem().getDamage(aList)), new ItemStack(ModBlocks.concrete_block), 0.1f);
         }
     }
 
